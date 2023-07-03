@@ -1,0 +1,24 @@
+.main {
+  header {
+    ul {
+      list-style-type: none;
+      display: table;
+      flex-direction: row;
+
+      li {
+        width: 160px;
+        display: table-cell;
+        margin: 5px;
+        padding: 5px 10px;
+        background-color: #e4b9b9;
+        vertical-align: middle;
+        border-radius: 0.9em;
+        word-wrap: normal;
+      }
+    }
+  }
+
+  p {
+    font-size: 2em;
+  }
+}

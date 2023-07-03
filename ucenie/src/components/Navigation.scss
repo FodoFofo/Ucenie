@@ -1,0 +1,24 @@
+nav {
+  padding: 2em;
+  background-color: #c5f57c;
+
+  .nav-link {
+    text-decoration: none;
+    color: #171738;
+    text-shadow: 0em 0em .5em #fff;
+    margin: 1em;
+    padding: 0.5em 1em;
+
+    border-radius: 2em;
+    box-shadow: 0em 0em 1.5em #1e437d;
+
+    font-weight: 800;
+    background-color: #b5842a;
+  }
+
+  .nav-link:hover {
+    background-color: #664b19;
+    color: #c5f57c;
+    text-shadow: none;
+  }
+}
