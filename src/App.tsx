@@ -1,17 +1,16 @@
-import React from 'react';
-import {Route, Routes} from 'react-router-dom'
+import { Route, Routes } from "react-router-dom";
 
-//styles
-import './App.scss';
+// štýly
+import "./App.scss";
 
 // views
-import Main from './Views/Main';
-import Projects from './Views/Projects';
-import Links from './Views/Links';
-import Pokusny from "./components/Pokusny";
+import Main from "./Views/Main";
+import Projects from "./Views/Projects";
+import Links from "./Views/Links";
 
-// components
-import Navigation from './components/Navigation';
+// komponenty
+import Navigation from "./components/Navigation";
+import AppBooks from "./components/Setek/AppBooks/AppBooks";
 
 function App() {
   return (
@@ -21,13 +20,13 @@ function App() {
       </header>
       <main>
         <Routes>
-          <Route path='/' element={ <Main /> } />
-          <Route path='/projects' element={ <Projects /> } />
-          <Route path='/links' element={ <Links /> } />
-          <Route path="/react" element={<Pokusny />} />
-          <Route path="/reactI" element={<Pokusny />} />
-          <Route path="/reactII" element={<Pokusny />} />
-          <Route path="/reactIII" element={<Pokusny />} />
+          <Route path="/" element={<Main />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/links" element={<Links />} />
+          <Route path="/setekBooks" element={<AppBooks />} />
+          <Route path="/reactI" element={<Projects />} />
+          <Route path="/reactII" element={<Projects />} />
+          <Route path="/reactIII" element={<Projects />} />
         </Routes>
       </main>
 
