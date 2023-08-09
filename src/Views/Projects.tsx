@@ -1,28 +1,16 @@
-import { Routes, Route, NavLink } from "react-router-dom";
-
-// styles
+// štýly
 import "./Projects.scss";
 
-// ------
-import Pokusny from "../components/Pokusny";
+// komponenty
+import Aside from "../components/Aside";
 
 const Projects = () => {
   return (
     <div className="projects">
-      <header>
-        <NavLink className="project-link" to="/react">
-          React
-        </NavLink>
-        <NavLink className="project-link" to="/reactI">
-          React I - 
-        </NavLink>
-        <NavLink className="project-link" to="/reactII">
-          React 2 pojďme vyvíjet pokročilejší aplikace
-        </NavLink>
-        <NavLink className="project-link" to="/reactIII">
-          React 3 posuňme své znalosti ještě dál
-        </NavLink>
-      </header>
+      <aside>
+        <Aside />
+      </aside>
+      <main></main>
     </div>
   );
 };
