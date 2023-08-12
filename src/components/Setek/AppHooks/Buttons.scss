@@ -1,0 +1,19 @@
+.text-button-changer {
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+
+  h2 {
+    text-align: center;
+    color: #91bbf2;
+  }
+
+  button {
+    background-color: #035aa6;
+    color: #91bbf2;
+    border: none;
+    border-radius: 47%;
+    margin: 0.3em;
+    padding: 0.9em 0.9em;
+  }
+}
