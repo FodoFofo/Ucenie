@@ -9,11 +9,11 @@ const Aside = () => {
         <NavLink className="project-link" to="/setekBooks">
           Projekt Books (Dávid Šetek)
         </NavLink>
-        <NavLink className="project-link" to="/reactI">
-          React I -
+        <NavLink className="project-link" to="/setekHooks">
+          Projekt Hooks (useState) (Dávid Šetek)
         </NavLink>
-        <NavLink className="project-link" to="/reactII">
-          React 2 pojďme vyvíjet pokročilejší aplikace
+        <NavLink className="project-link" to="/setekTaskApp">
+          Projekt Task App (Dávid Šetek)
         </NavLink>
         <NavLink className="project-link" to="/reactIII">
           React 3 posuňme své znalosti ještě dál
