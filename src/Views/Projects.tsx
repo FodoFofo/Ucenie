@@ -5,6 +5,8 @@ import "./Projects.scss";
 import Aside from "../components/Aside";
 
 const Projects = () => {
+
+  
   return (
     <div className="projects">
       <aside>

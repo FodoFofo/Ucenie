@@ -3,8 +3,6 @@ import './AppBooks.scss'
 
 // komponenty
 import Books from "./Books";
-import Aside from "../../Aside";
-
 
 const AppBooks = () => {
   const books = [
@@ -29,26 +27,13 @@ const AppBooks = () => {
   ];
 
   return (
-    <div className="app-books">
-      <Aside />
       <div className="all-books">
-        <header>
-          <h1>Projekt Books</h1>
-        </header>
         <main>
           <Books image={books[0].image} title={books[0].title} />
           <Books image={books[1].image} title={books[1].title} />
           <Books image={books[2].image} title={books[2].title} />
         </main>
-        <footer>
-          Vytvorené podľa kurzu od Davida Šeteka na{" "}
-          <a href="https://www.youtube.com/watch?v=RdDzoVJOxX4&list=PLQ8x_VWW6Akua8I5spV8nHIWlG6_tX6dx">
-            youtube
-          </a>{" "}
-          lekcie 8.-17. - prerobené do TypeScript
-        </footer>
       </div>
-    </div>
   );
 };
 

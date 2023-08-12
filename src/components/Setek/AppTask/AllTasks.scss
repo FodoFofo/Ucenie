@@ -1,33 +1,34 @@
 .one-task {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: #2a3036;
-    width: 500px;
-    margin: 10px auto;
-    border-radius: 0.9rem;
-    overflow: hidden;
-}
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #2a3036;
+  color: #f37373;
+  width: 500px;
+  margin: 10px auto;
+  border-radius: 0.9rem;
+  overflow: hidden;
 
-.one-task h4 {
+  h4 {
     padding-left: 20px;
+  }
+  
+  button {
+    margin: 15px;
+  }
 }
 
 button {
-    background-color: #3480c3;
-    color: #345a42;
-    border: none;
-    cursor: pointer;
-    font-weight: 800;
-    border-radius: 0.9rem;
-    padding: 0.8em 1.5em;
-}
-
-.one-task button {
-    margin: 15px;
+  background-color: #3480c3;
+  color: #345a42;
+  border: none;
+  cursor: pointer;
+  font-weight: 800;
+  border-radius: 0.9rem;
+  padding: 0.8em 1.5em;
 }
 
 .main-button {
-    display: block;
-    margin: 30px auto;
+  display: block;
+  margin: 30px auto;
 }

@@ -1,14 +1,9 @@
-.app-hooks {
+.app {
     display: flex;
     flex-direction: row;
     margin-top: 0.3em;
   
-    aside {
-      width: 22vw;
-      min-width: 250px;
-    }
-  
-    .hooks {
+    .project {
       background-color: #a9d3d3;
       display: flex;
       flex-direction: column;
@@ -20,13 +15,6 @@
         text-decoration-line: underline;
         font-style: oblique;
         color: #4789d0;
-      }
-  
-      main {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
       }
   
       footer {
