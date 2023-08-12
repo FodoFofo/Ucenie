@@ -9,6 +9,20 @@ const Links = () => {
       </p>
       <h2>Odkazy:</h2>
       <a
+        href="https://smarterhome.sk/sk/shelly_63?gclid=Cj0KCQjw4s-kBhDqARIsAN-ipH14RBEBIHwe2eEMly5ZwgMId9v0F218-MhnuthfW7AzRFlzltqmW60aAn3DEALw_wcB"
+        target="_blank"
+        rel="noreferrer"
+      >
+        Smarterhome - Inteligentná domácnosť
+      </a>
+      <a
+        href="https://dev.to/blossom/8-best-practices-for-reactjs-component-design-4jn5"
+        target="_blank"
+        rel="noreferrer"
+      >
+        8 best practices for reactjs component design
+      </a>
+      <a
         href="https://wintip.cz/485-jak-zobrazit-heslo-k-wifi-ve-windows"
         target="_blank"
         rel="noreferrer"
