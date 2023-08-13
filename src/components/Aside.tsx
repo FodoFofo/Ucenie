@@ -15,8 +15,8 @@ const Aside = () => {
         <NavLink className="project-link" to="/setekTaskApp">
           Projekt Task App (Dávid Šetek)
         </NavLink>
-        <NavLink className="project-link" to="/project">
-          Pokus s novou komponentou
+        <NavLink className="project-link" to="/setekPocitadlo">
+          Projekt Počítadlo
         </NavLink>
     </div>
   )

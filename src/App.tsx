@@ -14,6 +14,7 @@ import AppBooks from "./components/Setek/AppBooks/AppBooks";
 import Buttons from "./components/Setek/AppHooks/Buttons";
 import AllTasks from "./components/Setek/AppTask/AllTasks";
 import Project from "./components/Project";
+import AppPocitadlo from "./components/Setek/AppPocitadlo/AppPocitadlo";
 
 const App = () => {
   return (
@@ -62,7 +63,18 @@ const App = () => {
               </Project>
             }
           />
-          <Route path="/project" element={<h1>niečo sem daj</h1>} />
+          <Route
+            path="/setekPocitadlo"
+            element={
+              <Project
+                title="Projekt Počítadlo"
+                link="https://www.youtube.com/watch?v=RdDzoVJOxX4&list=PLQ8x_VWW6Akua8I5spV8nHIWlG6_tX6dx"
+                lessons="37. - 43."
+              >
+                <AppPocitadlo />
+              </Project>
+            }
+          />
         </Routes>
       </main>
 
