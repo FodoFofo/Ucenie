@@ -18,6 +18,9 @@ const Aside = () => {
         <NavLink className="project-link" to="/setekPocitadlo">
           Projekt Počítadlo
         </NavLink>
+        <NavLink className="project-link" to="/setekNetflix">
+          Projekt Netflix
+        </NavLink>
     </div>
   )
 }

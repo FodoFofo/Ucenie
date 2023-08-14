@@ -15,6 +15,7 @@ import Buttons from "./components/Setek/AppHooks/Buttons";
 import AllTasks from "./components/Setek/AppTask/AllTasks";
 import Project from "./components/Project";
 import AppPocitadlo from "./components/Setek/AppPocitadlo/AppPocitadlo";
+import Movie from "./components/Setek/AppNetflix/Movie";
 
 const App = () => {
   return (
@@ -72,6 +73,18 @@ const App = () => {
                 lessons="37. - 43."
               >
                 <AppPocitadlo />
+              </Project>
+            }
+          />
+          <Route
+            path="/setekNetflix"
+            element={
+              <Project
+                title="Projekt Netflix"
+                link="https://www.youtube.com/watch?v=RdDzoVJOxX4&list=PLQ8x_VWW6Akua8I5spV8nHIWlG6_tX6dx"
+                lessons="44. - XX."
+              >
+                <Movie />
               </Project>
             }
           />
