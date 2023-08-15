@@ -1,28 +1,34 @@
 import { NavLink } from "react-router-dom";
 
 // štýly
-import './Aside.scss'
+import "./Aside.scss";
 
 const Aside = () => {
   return (
     <div className="aside">
-        <NavLink className="project-link" to="/setekBooks">
-          Projekt Books (Dávid Šetek)
-        </NavLink>
-        <NavLink className="project-link" to="/setekHooks">
-          Projekt Hooks (useState) (Dávid Šetek)
-        </NavLink>
-        <NavLink className="project-link" to="/setekTaskApp">
-          Projekt Task App (Dávid Šetek)
-        </NavLink>
-        <NavLink className="project-link" to="/setekPocitadlo">
-          Projekt Počítadlo
-        </NavLink>
-        <NavLink className="project-link" to="/setekNetflix">
-          Projekt Netflix
-        </NavLink>
+      <NavLink className="project-link" to="/setekBooks">
+        Projekt Books (Dávid Šetek)
+      </NavLink>
+      <NavLink className="project-link" to="/setekHooks">
+        Projekt Hooks (useState) (Dávid Šetek)
+      </NavLink>
+      <NavLink className="project-link" to="/setekTaskApp">
+        Projekt Task App (Dávid Šetek)
+      </NavLink>
+      <NavLink className="project-link" to="/setekPocitadlo">
+        Projekt Počítadlo
+      </NavLink>
+      <NavLink className="project-link" to="/setekNetflix">
+        Projekt Netflix
+      </NavLink>
+      <NavLink className="project-link" to="/setekAppUseEffect1">
+        Projekt useEffect 1
+      </NavLink>
+      <NavLink className="project-link" to="/setekAppUseEffect2">
+        Projekt useEffect 2 (cleanUp function)
+      </NavLink>
     </div>
-  )
-}
+  );
+};
 
-export default Aside
+export default Aside;

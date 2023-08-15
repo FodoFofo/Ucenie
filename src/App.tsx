@@ -16,6 +16,8 @@ import AllTasks from "./components/Setek/AppTask/AllTasks";
 import Project from "./components/Project";
 import AppPocitadlo from "./components/Setek/AppPocitadlo/AppPocitadlo";
 import Movie from "./components/Setek/AppNetflix/Movie";
+import AppUseEffect1 from "./components/Setek/AppUseEffect/AppUseEffect1";
+import AppUseEffect2 from "./components/Setek/AppUseEffect/AppUseEffect2";
 
 const App = () => {
   return (
@@ -82,9 +84,33 @@ const App = () => {
               <Project
                 title="Projekt Netflix"
                 link="https://www.youtube.com/watch?v=RdDzoVJOxX4&list=PLQ8x_VWW6Akua8I5spV8nHIWlG6_tX6dx"
-                lessons="44. - XX."
+                lessons="44. - 53."
               >
                 <Movie />
+              </Project>
+            }
+          />
+          <Route
+            path="/setekAppUseEffect1"
+            element={
+              <Project
+                title="Projekt useEffect 1"
+                link="https://www.youtube.com/watch?v=RdDzoVJOxX4&list=PLQ8x_VWW6Akua8I5spV8nHIWlG6_tX6dx"
+                lessons="54. - 61."
+              >
+                <AppUseEffect1 />
+              </Project>
+            }
+          />
+          <Route
+            path="/setekAppUseEffect2"
+            element={
+              <Project
+                title="Projekt useEffect 2"
+                link="https://www.youtube.com/watch?v=RdDzoVJOxX4&list=PLQ8x_VWW6Akua8I5spV8nHIWlG6_tX6dx"
+                lessons="62. - 64."
+              >
+                <AppUseEffect2 />
               </Project>
             }
           />
