@@ -27,6 +27,9 @@ const Aside = () => {
       <NavLink className="project-link" to="/setekAppUseEffect2">
         Projekt useEffect 2 (cleanUp function)
       </NavLink>
+      <NavLink className="project-link" to="/setekAppApi">
+        Projekt API
+      </NavLink>
     </div>
   );
 };

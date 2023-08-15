@@ -18,6 +18,7 @@ import AppPocitadlo from "./components/Setek/AppPocitadlo/AppPocitadlo";
 import Movie from "./components/Setek/AppNetflix/Movie";
 import AppUseEffect1 from "./components/Setek/AppUseEffect/AppUseEffect1";
 import AppUseEffect2 from "./components/Setek/AppUseEffect/AppUseEffect2";
+import AppApi from "./components/Setek/AppAPI/AppApi";
 
 const App = () => {
   return (
@@ -111,6 +112,18 @@ const App = () => {
                 lessons="62. - 64."
               >
                 <AppUseEffect2 />
+              </Project>
+            }
+          />
+          <Route
+            path="/setekAppApi"
+            element={
+              <Project
+                title="Projekt API"
+                link="https://www.youtube.com/watch?v=RdDzoVJOxX4&list=PLQ8x_VWW6Akua8I5spV8nHIWlG6_tX6dx"
+                lessons="65. - 68."
+              >
+                <AppApi />
               </Project>
             }
           />
