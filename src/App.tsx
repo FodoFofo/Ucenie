@@ -121,7 +121,7 @@ const App = () => {
               <Project
                 title="Projekt API"
                 link="https://www.youtube.com/watch?v=RdDzoVJOxX4&list=PLQ8x_VWW6Akua8I5spV8nHIWlG6_tX6dx"
-                lessons="65. - 68."
+                lessons="65. - 68. + 69. - 72."
               >
                 <AppApi />
               </Project>
