@@ -19,6 +19,7 @@ import Movie from "./components/Setek/AppNetflix/Movie";
 import AppUseEffect1 from "./components/Setek/AppUseEffect/AppUseEffect1";
 import AppUseEffect2 from "./components/Setek/AppUseEffect/AppUseEffect2";
 import AppApi from "./components/Setek/AppAPI/AppApi";
+import AppMultipleReturns from "./components/Setek/AppMultipleReturns/AppMultipleReturns";
 
 const App = () => {
   return (
@@ -124,6 +125,18 @@ const App = () => {
                 lessons="65. - 68. + 69. - 72."
               >
                 <AppApi />
+              </Project>
+            }
+          />
+          <Route
+            path="/setekAppMultipleReturns"
+            element={
+              <Project
+                title="Projekt Multiple Returns"
+                link="https://www.youtube.com/watch?v=RdDzoVJOxX4&list=PLQ8x_VWW6Akua8I5spV8nHIWlG6_tX6dx"
+                lessons="73. - 79."
+              >
+                <AppMultipleReturns />
               </Project>
             }
           />
