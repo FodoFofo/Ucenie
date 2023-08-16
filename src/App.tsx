@@ -20,6 +20,7 @@ import AppUseEffect1 from "./components/Setek/AppUseEffect/AppUseEffect1";
 import AppUseEffect2 from "./components/Setek/AppUseEffect/AppUseEffect2";
 import AppApi from "./components/Setek/AppAPI/AppApi";
 import AppMultipleReturns from "./components/Setek/AppMultipleReturns/AppMultipleReturns";
+import AppShowHide from "./components/Setek/AppShowHide/AppShowHide";
 
 const App = () => {
   return (
@@ -137,6 +138,18 @@ const App = () => {
                 lessons="73. - 79."
               >
                 <AppMultipleReturns />
+              </Project>
+            }
+          />
+          <Route
+            path="/setekAppShowHide"
+            element={
+              <Project
+                title="Projekt Ukáž / skry"
+                link="https://www.youtube.com/watch?v=RdDzoVJOxX4&list=PLQ8x_VWW6Akua8I5spV8nHIWlG6_tX6dx"
+                lessons="80. - 81."
+              >
+                <AppShowHide />
               </Project>
             }
           />

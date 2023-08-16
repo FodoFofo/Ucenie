@@ -33,6 +33,9 @@ const Aside = () => {
       <NavLink className="project-link" to="/setekAppMultipleReturns">
         Projekt Multiple Returns
       </NavLink>
+      <NavLink className="project-link" to="/setekAppShowHide">
+      Projekt Ukáž / skry
+      </NavLink>
     </div>
   );
 };
