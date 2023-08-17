@@ -7,6 +7,7 @@ import "./App.scss";
 import Main from "./Views/Main";
 import Projects from "./Views/Projects";
 import Links from "./Views/Links";
+import Teoria from "./Views/Teoria";
 
 // komponenty
 import Navigation from "./components/Navigation";
@@ -21,6 +22,7 @@ import AppUseEffect2 from "./components/Setek/AppUseEffect/AppUseEffect2";
 import AppApi from "./components/Setek/AppAPI/AppApi";
 import AppMultipleReturns from "./components/Setek/AppMultipleReturns/AppMultipleReturns";
 import AppShowHide from "./components/Setek/AppShowHide/AppShowHide";
+import AppNetflix2 from "./components/Setek/AppNetflix2/AppNetflix2";
 
 const App = () => {
   return (
@@ -33,6 +35,7 @@ const App = () => {
           <Route path="/" element={<Main />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/links" element={<Links />} />
+          <Route path="/teoria" element={<Teoria />} />
           <Route
             path="/setekBooks"
             element={
@@ -145,11 +148,23 @@ const App = () => {
             path="/setekAppShowHide"
             element={
               <Project
-                title="Projekt Ukáž / skry"
+                title="Projekt Ukáž / Skry"
                 link="https://www.youtube.com/watch?v=RdDzoVJOxX4&list=PLQ8x_VWW6Akua8I5spV8nHIWlG6_tX6dx"
-                lessons="80. - 81."
+                lessons="80."
               >
                 <AppShowHide />
+              </Project>
+            }
+          />
+          <Route
+            path="/setekNetflix2"
+            element={
+              <Project
+                title="Projekt preklikavanie filmov"
+                link="https://www.youtube.com/watch?v=RdDzoVJOxX4&list=PLQ8x_VWW6Akua8I5spV8nHIWlG6_tX6dx"
+                lessons="81. - 87."
+              >
+                <AppNetflix2 />
               </Project>
             }
           />
