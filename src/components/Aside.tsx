@@ -40,7 +40,13 @@ const Aside = () => {
         Projekt preklikavanie filmov
       </NavLink>
       <NavLink className="project-link" to="/setekFAQ">
-      Projekt FAQ
+        Projekt FAQ
+      </NavLink>
+      <NavLink className="project-link" to="/setekSlider">
+        Projekt Slider
+      </NavLink>
+      <NavLink className="project-link" to="/setekPokrocilySlider">
+        Projekt Pokročilý Slider
       </NavLink>
     </div>
   );

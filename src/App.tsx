@@ -24,6 +24,8 @@ import AppMultipleReturns from "./components/Setek/AppMultipleReturns/AppMultipl
 import AppShowHide from "./components/Setek/AppShowHide/AppShowHide";
 import AppNetflix2 from "./components/Setek/AppNetflix2/AppNetflix2";
 import AppFAQ from "./components/Setek/AppFAQ/AppFAQ";
+import AppSlider from "./components/Setek/AppSlider/AppSlider";
+import AppPokrocilySlider from "./components/Setek/AppPokrocilySlider/AppPokrocilySlider";
 
 const App = () => {
   return (
@@ -175,9 +177,33 @@ const App = () => {
               <Project
                 title="Projekt FAQ"
                 link="https://www.youtube.com/watch?v=RdDzoVJOxX4&list=PLQ8x_VWW6Akua8I5spV8nHIWlG6_tX6dx"
-                lessons="88. - XX."
+                lessons="88. - 93."
               >
                 <AppFAQ />
+              </Project>
+            }
+          />
+          <Route
+            path="/setekSlider"
+            element={
+              <Project
+                title="Projekt Slider"
+                link="https://www.youtube.com/watch?v=RdDzoVJOxX4&list=PLQ8x_VWW6Akua8I5spV8nHIWlG6_tX6dx"
+                lessons="95. - 101."
+              >
+                <AppSlider />
+              </Project>
+            }
+          />
+          <Route
+            path="/setekPokrocilySlider"
+            element={
+              <Project
+                title="Projekt Pokročilý Slider"
+                link="https://www.youtube.com/watch?v=RdDzoVJOxX4&list=PLQ8x_VWW6Akua8I5spV8nHIWlG6_tX6dx"
+                lessons="102. - 111."
+              >
+                <AppPokrocilySlider />
               </Project>
             }
           />
