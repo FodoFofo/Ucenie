@@ -39,6 +39,9 @@ const Aside = () => {
       <NavLink className="project-link" to="/setekNetflix2">
         Projekt preklikavanie filmov
       </NavLink>
+      <NavLink className="project-link" to="/setekFAQ">
+      Projekt FAQ
+      </NavLink>
     </div>
   );
 };

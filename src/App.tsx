@@ -23,6 +23,7 @@ import AppApi from "./components/Setek/AppAPI/AppApi";
 import AppMultipleReturns from "./components/Setek/AppMultipleReturns/AppMultipleReturns";
 import AppShowHide from "./components/Setek/AppShowHide/AppShowHide";
 import AppNetflix2 from "./components/Setek/AppNetflix2/AppNetflix2";
+import AppFAQ from "./components/Setek/AppFAQ/AppFAQ";
 
 const App = () => {
   return (
@@ -165,6 +166,18 @@ const App = () => {
                 lessons="81. - 87."
               >
                 <AppNetflix2 />
+              </Project>
+            }
+          />
+          <Route
+            path="/setekFAQ"
+            element={
+              <Project
+                title="Projekt FAQ"
+                link="https://www.youtube.com/watch?v=RdDzoVJOxX4&list=PLQ8x_VWW6Akua8I5spV8nHIWlG6_tX6dx"
+                lessons="88. - XX."
+              >
+                <AppFAQ />
               </Project>
             }
           />
