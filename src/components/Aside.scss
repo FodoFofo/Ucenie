@@ -2,6 +2,14 @@
   display: flex;
   flex-direction: column;
   align-items: stretch;
+  width: 300px ;
+
+  h2,
+  h3 {
+    margin: 0;
+    padding-left: 0.5rem;
+    text-align: start;
+  }
 
   .project-link {
     margin: 0.4em 1em;
@@ -10,9 +18,22 @@
     border-radius: 1em;
     text-align: left;
     word-wrap: normal;
+    font-weight: 700;
   }
 
-  .project-link:hover {
+  .project-link:hover,
+  .active {
     background-color: #0f7372;
+  }
+
+  .david-setek,
+  .reacti {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hide {
+    display: none;
   }
 }
