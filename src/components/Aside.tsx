@@ -5,6 +5,7 @@ import { BiSolidDownArrow, BiSolidUpArrow } from "react-icons/bi";
 
 // štýly
 import "./Aside.scss";
+import { CollapsibleMenu } from "./CollapsibleMenu";
 
 const Aside = () => {
   const showHide = (e: React.MouseEvent<HTMLHeadingElement>) => {
@@ -80,7 +81,12 @@ const Aside = () => {
           <h5>ahoj</h5>
           <h5>ahoj</h5>
         </div>
-
+        <CollapsibleMenu title="Collapsible menu">
+          <h5>ahoj</h5>
+          <h5>ahoj</h5>
+          <h5>ahoj</h5>
+          <h5>ahoj</h5>
+        </CollapsibleMenu>
         <h3 onClick={showHide}>React III ⤴</h3>
         <div className="reactiii">
           <h5>ahoj</h5>
