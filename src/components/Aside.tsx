@@ -1,28 +1,32 @@
-import { useEffect } from "react";
 import { NavLink } from "react-router-dom";
+
+// ikony
+import { BiSolidDownArrow, BiSolidUpArrow } from "react-icons/bi";
 
 // štýly
 import "./Aside.scss";
 
 const Aside = () => {
-  const reacti = document.querySelector(".reacti");
-  useEffect(() => {
-    console.log();
-  }, []);
-
   const showHide = (e: React.MouseEvent<HTMLHeadingElement>) => {
     const target = e.target as HTMLHeadingElement;
     const sibling = target.nextSibling as Element;
 
-    if (sibling.classList.contains("hide")) sibling.classList.remove("hide");
-    else sibling.classList.add("hide");
+    if (sibling.classList.contains("hide")) {
+      sibling.classList.remove("hide");
+      target.textContent =
+        target.textContent?.replace("⤵", "⤴") || target.textContent;
+    } else {
+      sibling.classList.add("hide");
+      target.textContent =
+        target.textContent?.replace("⤴", "⤵") || target.textContent;
+    }
   };
 
   return (
     <div className="aside">
-      <h2>Dávid Šetek</h2>
+      <h2 onClick={showHide}>Dávid Šetek ⤴</h2>
       <div className="david-setek">
-        <h3 onClick={showHide}>React I</h3>
+        <h3 onClick={showHide}>React I ⤴</h3>
         <div className="reacti">
           <NavLink className="project-link" to="/setekBooks">
             Projekt Books
@@ -68,7 +72,7 @@ const Aside = () => {
           </NavLink>
         </div>
 
-        <h3 onClick={showHide}>React II</h3>
+        <h3 onClick={showHide}>React II ⤴</h3>
         <div className="reactii">
           <h5>ahoj</h5>
           <h5>ahoj</h5>
@@ -77,7 +81,7 @@ const Aside = () => {
           <h5>ahoj</h5>
         </div>
 
-        <h3 onClick={showHide}>React III</h3>
+        <h3 onClick={showHide}>React III ⤴</h3>
         <div className="reactiii">
           <h5>ahoj</h5>
           <h5>ahoj</h5>
