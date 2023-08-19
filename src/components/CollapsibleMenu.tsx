@@ -1,5 +1,8 @@
 import { ReactNode, useState } from "react";
 
+// ikony
+import { BiSolidDownArrow, BiSolidUpArrow } from "react-icons/bi";
+
 type ComponentProps = {
   title: string;
   children?: ReactNode | ReactNode[] | string;
@@ -9,7 +12,7 @@ type ComponentProps = {
 export const CollapsibleMenu = ({
   children,
   title,
-  isOpenDefault = false,
+  isOpenDefault = true,
 }: ComponentProps) => {
   const [isOpen, setOpen] = useState<boolean>(isOpenDefault);
 
@@ -17,7 +20,7 @@ export const CollapsibleMenu = ({
   return (
     <>
       <h3 onClick={toggleMenuState}>
-        {title} {isOpen ? "⤴" : "⤵"}
+        {title} {isOpen ? <BiSolidUpArrow /> : <BiSolidDownArrow />}
       </h3>
       {isOpen ? <div className="submenu-container">{children}</div> : null}
     </>

@@ -1,8 +1,5 @@
 import { NavLink } from "react-router-dom";
 
-// ikony
-import { BiSolidDownArrow, BiSolidUpArrow } from "react-icons/bi";
-
 // štýly
 import "./Aside.scss";
 import { CollapsibleMenu } from "./CollapsibleMenu";
@@ -27,9 +24,8 @@ const Aside = () => {
     <div className="aside">
       <h2 onClick={showHide}>Dávid Šetek ⤴</h2>
       <div className="david-setek">
-        <h3 onClick={showHide}>React I ⤴</h3>
-        <div className="reacti">
-          <NavLink className="project-link" to="/setekBooks">
+        <CollapsibleMenu title="React I">
+        <NavLink className="project-link" to="/setekBooks">
             Projekt Books
           </NavLink>
           <NavLink className="project-link" to="/setekHooks">
@@ -71,29 +67,17 @@ const Aside = () => {
           <NavLink className="project-link" to="/setekPokrocilySlider">
             Projekt Pokročilý Slider
           </NavLink>
-        </div>
-
-        <h3 onClick={showHide}>React II ⤴</h3>
-        <div className="reactii">
-          <h5>ahoj</h5>
-          <h5>ahoj</h5>
-          <h5>ahoj</h5>
-          <h5>ahoj</h5>
-          <h5>ahoj</h5>
-        </div>
-        <CollapsibleMenu title="Collapsible menu">
-          <h5>ahoj</h5>
-          <h5>ahoj</h5>
-          <h5>ahoj</h5>
-          <h5>ahoj</h5>
         </CollapsibleMenu>
-        <h3 onClick={showHide}>React III ⤴</h3>
-        <div className="reactiii">
-          <h5>ahoj</h5>
-          <h5>ahoj</h5>
-          <h5>ahoj</h5>
-          <h5>ahoj</h5>
-        </div>
+
+        <CollapsibleMenu title="React II" isOpenDefault={false}>
+        <h5>doplniť</h5>
+        </CollapsibleMenu>
+
+        <CollapsibleMenu title="React III" isOpenDefault={false} >
+        <h5>doplniť</h5>
+        </CollapsibleMenu>
+
+        
       </div>
     </div>
   );
