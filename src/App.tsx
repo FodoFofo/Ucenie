@@ -7,7 +7,6 @@ import "./App.scss";
 import Main from "./Views/Main";
 import Projects from "./Views/Projects";
 import Links from "./Views/Links";
-import Teoria from "./Views/Teoria";
 
 // komponenty
 import Navigation from "./components/Navigation";
@@ -38,7 +37,6 @@ const App = () => {
           <Route path="/" element={<Main />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/links" element={<Links />} />
-          <Route path="/teoria" element={<Teoria />} />
           <Route
             path="/setekBooks"
             element={
