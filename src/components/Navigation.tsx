@@ -11,7 +11,7 @@ const Navigation = () => {
         Main
       </NavLink>
       <NavLink className="nav-link" to="/projects">
-        Projects
+        Projectsssssssssssssssssssss
       </NavLink>
       <NavLink className="nav-link" to="/links">
         Links
