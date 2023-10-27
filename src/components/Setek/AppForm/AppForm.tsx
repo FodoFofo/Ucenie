@@ -3,12 +3,9 @@ import React, { useState } from 'react'
 // štýly
 import './AppForm.scss'
 
-
-// TODO: jedna nedoriešená chybička v useState names je priradený pri deklarácii jeden prvok, prázdny, bez toho mi to nefunguje
-
 const AppForm = () => {
   const [firstName, setFirstName] = useState('')
-  const [names, setNames] = useState([''])
+  const [names, setNames] = useState<string[]>([])
 
   const formSubmit :React.FormEventHandler<HTMLFormElement> =(e) => {
     e.preventDefault()
