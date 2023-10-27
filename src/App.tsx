@@ -25,6 +25,7 @@ import AppNetflix2 from "./components/Setek/AppNetflix2/AppNetflix2";
 import AppFAQ from "./components/Setek/AppFAQ/AppFAQ";
 import AppSlider from "./components/Setek/AppSlider/AppSlider";
 import AppPokrocilySlider from "./components/Setek/AppPokrocilySlider/AppPokrocilySlider";
+import AppForm from "./components/Setek/AppForm/AppForm";
 
 const App = () => {
   return (
@@ -202,6 +203,18 @@ const App = () => {
                 lessons="102. - 111."
               >
                 <AppPokrocilySlider />
+              </Project>
+            }
+          />
+          <Route
+            path="/setekFormular"
+            element={
+              <Project
+                title="Projekt Formulár"
+                link="https://www.youtube.com/watch?v=RdDzoVJOxX4&list=PLQ8x_VWW6Akua8I5spV8nHIWlG6_tX6dx"
+                lessons="1. - 8."
+              >
+                <AppForm />
               </Project>
             }
           />

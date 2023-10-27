@@ -70,7 +70,9 @@ const Aside = () => {
         </CollapsibleMenu>
 
         <CollapsibleMenu title="React II" isOpenDefault={false}>
-        <h5>doplniť</h5>
+          <NavLink className="project-link" to="/setekFormular">
+            Formulár
+          </NavLink>
         </CollapsibleMenu>
 
         <CollapsibleMenu title="React III" isOpenDefault={false} >
