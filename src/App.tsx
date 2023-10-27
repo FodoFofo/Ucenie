@@ -26,6 +26,7 @@ import AppFAQ from "./components/Setek/AppFAQ/AppFAQ";
 import AppSlider from "./components/Setek/AppSlider/AppSlider";
 import AppPokrocilySlider from "./components/Setek/AppPokrocilySlider/AppPokrocilySlider";
 import AppForm from "./components/Setek/AppForm/AppForm";
+import AppAdvancedForm from "./components/Setek/AppAdvancedForm/AppAdvancedForm";
 
 const App = () => {
   return (
@@ -211,10 +212,22 @@ const App = () => {
             element={
               <Project
                 title="Projekt Formulár"
-                link="https://www.youtube.com/watch?v=RdDzoVJOxX4&list=PLQ8x_VWW6Akua8I5spV8nHIWlG6_tX6dx"
+                link="https://www.youtube.com/watch?v=NYf9hNqADYs&list=PLQ8x_VWW6Aktmp_v1eYcCBbO5GovP_sHl"
                 lessons="1. - 8."
               >
                 <AppForm />
+              </Project>
+            }
+          />
+          <Route
+            path="/setekPokrocilyFormular"
+            element={
+              <Project
+                title="Projekt Pokročilý Formulár"
+                link="https://www.youtube.com/watch?v=NYf9hNqADYs&list=PLQ8x_VWW6Aktmp_v1eYcCBbO5GovP_sHl"
+                lessons="11. - 20."
+              >
+                <AppAdvancedForm />
               </Project>
             }
           />

@@ -24,7 +24,7 @@ const Aside = () => {
     <div className="aside">
       <h2 onClick={showHide}>Dávid Šetek ⤴</h2>
       <div className="david-setek">
-        <CollapsibleMenu title="React I">
+        <CollapsibleMenu title="React I" isOpenDefault={false}>
         <NavLink className="project-link" to="/setekBooks">
             Projekt Books
           </NavLink>
@@ -69,9 +69,12 @@ const Aside = () => {
           </NavLink>
         </CollapsibleMenu>
 
-        <CollapsibleMenu title="React II" isOpenDefault={false}>
+        <CollapsibleMenu title="React II">
           <NavLink className="project-link" to="/setekFormular">
             Formulár
+          </NavLink>
+          <NavLink className="project-link" to="/setekPokrocilyFormular">
+            Pokročilý formulár
           </NavLink>
         </CollapsibleMenu>
 

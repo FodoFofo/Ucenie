@@ -1,0 +1,36 @@
+.advanced-form {
+    margin: 0;
+    padding: 15px;
+    background-color: #141414;
+    color: #e5e5e5;
+    
+    form {
+        height: 20vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        .user-info {
+            margin-bottom: 10px;
+            outline: none;
+        }
+        
+        input[type="submit"] {
+            background-color: #e50914;
+            color: #e5e5e5;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    }
+    
+    
+    .item {
+        text-align: center;
+        box-shadow: 0 0 10px #e50914;
+        width: 300px;
+        margin: 10px auto;
+        padding: 5px 0;
+    }
+}
