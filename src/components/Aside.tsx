@@ -76,6 +76,9 @@ const Aside = () => {
           <NavLink className="project-link" to="/setekPokrocilyFormular">
             Pokročilý formulár
           </NavLink>
+          <NavLink className="project-link" to="/setekGeneretorLorem">
+            Generátor Lorem Ipsum
+          </NavLink>
         </CollapsibleMenu>
 
         <CollapsibleMenu title="React III" isOpenDefault={false} >

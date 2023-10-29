@@ -27,6 +27,7 @@ import AppSlider from "./components/Setek/AppSlider/AppSlider";
 import AppPokrocilySlider from "./components/Setek/AppPokrocilySlider/AppPokrocilySlider";
 import AppForm from "./components/Setek/AppForm/AppForm";
 import AppAdvancedForm from "./components/Setek/AppAdvancedForm/AppAdvancedForm";
+import AppGeneretorLorem from "./components/Setek/AppGeneretorLorem/AppGeneretorLorem";
 
 const App = () => {
   return (
@@ -228,6 +229,18 @@ const App = () => {
                 lessons="11. - 20."
               >
                 <AppAdvancedForm />
+              </Project>
+            }
+          />
+          <Route
+            path="/setekGeneretorLorem"
+            element={
+              <Project
+                title="Generátor Lorem Ipsum"
+                link="https://www.youtube.com/watch?v=NYf9hNqADYs&list=PLQ8x_VWW6Aktmp_v1eYcCBbO5GovP_sHl"
+                lessons="21. - 28."
+              >
+                <AppGeneretorLorem />
               </Project>
             }
           />
