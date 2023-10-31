@@ -82,6 +82,12 @@ const Aside = () => {
           <NavLink className="project-link" to="/setekHooksUseRef">
             Projekt Hooks (useRef)
           </NavLink>
+          <NavLink className="project-link" to="/setekMenu">
+            Projekt Menu
+          </NavLink>
+          <NavLink className="project-link" to="/setekHooksUseReducer">
+            Projekt Hooks (useReducer)
+          </NavLink>
         </CollapsibleMenu>
 
         <CollapsibleMenu title="React III" isOpenDefault={false} >
