@@ -28,6 +28,7 @@ import AppPokrocilySlider from "./components/Setek/AppPokrocilySlider/AppPokroci
 import AppForm from "./components/Setek/AppForm/AppForm";
 import AppAdvancedForm from "./components/Setek/AppAdvancedForm/AppAdvancedForm";
 import AppGeneretorLorem from "./components/Setek/AppGeneretorLorem/AppGeneretorLorem";
+import AppHooksUseRef from "./components/Setek/AppHooksUseRef/AppHooksUseRef";
 
 const App = () => {
   return (
@@ -241,6 +242,18 @@ const App = () => {
                 lessons="21. - 28."
               >
                 <AppGeneretorLorem />
+              </Project>
+            }
+          />
+          <Route
+            path="/setekHooksUseRef"
+            element={
+              <Project
+                title="Projekt Hooks (useRef)"
+                link="https://www.youtube.com/watch?v=NYf9hNqADYs&list=PLQ8x_VWW6Aktmp_v1eYcCBbO5GovP_sHl"
+                lessons="30."
+              >
+                <AppHooksUseRef />
               </Project>
             }
           />
