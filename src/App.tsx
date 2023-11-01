@@ -31,6 +31,7 @@ import AppGeneretorLorem from "./components/Setek/AppGeneretorLorem/AppGeneretor
 import AppHooksUseRef from "./components/Setek/AppHooksUseRef/AppHooksUseRef";
 import AppMenu from './components/Setek/AppMenu/AppMenu'
 import AppHooksUseReducer from "./components/Setek/AppHooksUseReducer/AppHooksUseReducer";
+import AppProps1 from "./components/Setek/AppProps1/AppProps1";
 
 const App = () => {
   return (
@@ -281,6 +282,18 @@ const App = () => {
                 lessons="38. - 51."
               >
                 <AppHooksUseReducer />
+              </Project>
+            }
+          />
+          <Route
+            path="/setekProps1"
+            element={
+              <Project
+                title="Projekt Props 1"
+                link="https://www.youtube.com/watch?v=NYf9hNqADYs&list=PLQ8x_VWW6Aktmp_v1eYcCBbO5GovP_sHl"
+                lessons="52. - ??."
+              >
+                <AppProps1 />
               </Project>
             }
           />
