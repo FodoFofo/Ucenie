@@ -1,14 +1,15 @@
 import { useState } from 'react'
 
 // dáta
-import data from './data'
+import data from '../AppProps1/data'
 
 // komponenty
 import MovieBox from './components/MovieBox'
+import MoviesContext from './components/MoviesContext'
 
-const AppProps1 = () => {
+const AppUseContext = () => {
     const [movies, setMovies] = useState(data)
-
+ 
     const deleteMovie = (movieId: number) => {
         const newMovieList = movies.filter( (oneMovie) => {
             return oneMovie.id !== movieId
@@ -17,9 +18,9 @@ const AppProps1 = () => {
         setMovies(newMovieList)
     }
 
-    return (
-        <div><MovieBox data={movies} deleteMovie={deleteMovie}/></div>
-     )
+    return <MoviesContext.Provider value={{deleteMovie, movies}}>
+        <MovieBox />
+    </MoviesContext.Provider>
 }
 
-export default AppProps1
+export default AppUseContext

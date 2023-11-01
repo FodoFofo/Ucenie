@@ -1,18 +1,16 @@
+import MoviesContext from './MoviesContext';
+import { useContext } from 'react'
 
 // typy
-import { MovieType } from '../../../../Types/index';
+import { MovieType } from '../../../../Types/index'
 
-// props
-type Props = {
-    data: MovieType[]
-    deleteMovie: (MovieId: number) => void
-}
+const Movies = () => {
+    const { deleteMovie, movies } = useContext(MoviesContext)
 
-const Movies = ({data, deleteMovie}: Props) => {
     return (
         <div>
             {
-                data.map( (oneMovie) => {
+                movies.map( (oneMovie: MovieType) => {
                     const {id, name} = oneMovie
 
                     return <div key={id}>

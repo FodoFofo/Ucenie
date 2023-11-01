@@ -88,8 +88,11 @@ const Aside = () => {
           <NavLink className="project-link" to="/setekHooksUseReducer">
             Projekt Hooks (useReducer)<span style={{color:"red"}}> - DOROBIŤ</span>
           </NavLink>
-          <NavLink className="project-link" to="/setekProps1">
-            Projekt Props 1
+          <NavLink className="project-link" to="/setekPropDrilling">
+            Projekt Props - Prop Drilling
+          </NavLink>
+          <NavLink className="project-link" to="/setekHooksUseContext">
+            Projekt Hooks (useContext)
           </NavLink>
         </CollapsibleMenu>
 

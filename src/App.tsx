@@ -32,6 +32,7 @@ import AppHooksUseRef from "./components/Setek/AppHooksUseRef/AppHooksUseRef";
 import AppMenu from './components/Setek/AppMenu/AppMenu'
 import AppHooksUseReducer from "./components/Setek/AppHooksUseReducer/AppHooksUseReducer";
 import AppProps1 from "./components/Setek/AppProps1/AppProps1";
+import AppUseContext from "./components/Setek/AppUseContext/AppUseContext";
 
 const App = () => {
   return (
@@ -286,14 +287,26 @@ const App = () => {
             }
           />
           <Route
-            path="/setekProps1"
+            path="/setekPropDrilling"
             element={
               <Project
-                title="Projekt Props 1"
+                title="Projekt Props - Prop Drilling"
                 link="https://www.youtube.com/watch?v=NYf9hNqADYs&list=PLQ8x_VWW6Aktmp_v1eYcCBbO5GovP_sHl"
-                lessons="52. - ??."
+                lessons="52. - 53."
               >
                 <AppProps1 />
+              </Project>
+            }
+          />
+          <Route
+            path="/setekHooksUseContext"
+            element={
+              <Project
+                title="Projekt Hooks (useContext)"
+                link="https://www.youtube.com/watch?v=NYf9hNqADYs&list=PLQ8x_VWW6Aktmp_v1eYcCBbO5GovP_sHl"
+                lessons="54. - 57."
+              >
+                <AppUseContext />
               </Project>
             }
           />
