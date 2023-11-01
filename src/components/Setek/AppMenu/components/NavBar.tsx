@@ -4,7 +4,7 @@ import { useState } from 'react'
 import './NavBar.scss'
 
 // dáta
-//import logo  from '../Images/netflix.png' 
+import logo  from '../Images/netflix.png' 
 import links from '../data'
 
 // ikony
@@ -17,7 +17,7 @@ const [showMenu, setShowMenu] = useState(false)
     <nav className='app-menu'>
       <div className='navigation'>
         <div className="nav-header">
-          {/* <img src={logo} alt="netflix" /> */}
+          <img src={logo} alt="netflix" />
           <button onClick={() => setShowMenu(!showMenu)}>
             <GiHamburgerMenu className='hamburger-icon'/>
           </button>
