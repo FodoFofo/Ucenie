@@ -41,10 +41,10 @@ const Aside = () => {
             Projekt Netflix
           </NavLink>
           <NavLink className="project-link" to="/setekAppUseEffect1">
-            Projekt useEffect 1
+            Projekt Hooks (useEffect 1)
           </NavLink>
           <NavLink className="project-link" to="/setekAppUseEffect2">
-            Projekt useEffect 2 (cleanUp function)
+            Projekt Hooks (useEffect 2 (cleanUp function))
           </NavLink>
           <NavLink className="project-link" to="/setekAppApi">
             Projekt API
@@ -83,10 +83,10 @@ const Aside = () => {
             Projekt Hooks (useRef)
           </NavLink>
           <NavLink className="project-link" to="/setekMenu">
-            Projekt Menu
+            Projekt Menu<span style={{color:"red"}}> - DOROBIŤ</span>
           </NavLink>
           <NavLink className="project-link" to="/setekHooksUseReducer">
-            Projekt Hooks (useReducer)
+            Projekt Hooks (useReducer)<span style={{color:"red"}}> - DOROBIŤ</span>
           </NavLink>
         </CollapsibleMenu>
 

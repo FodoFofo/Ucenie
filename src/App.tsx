@@ -263,7 +263,8 @@ const App = () => {
             path="/setekMenu"
             element={
               <Project
-                title="Projekt Menu"
+                title="Projekt Menu - Opraviť - vyhadzuje chybu v prehliadači - treba naštudovať modules, zatiaľ
+                       vyriešené vložením obrázku do adresára public a vložením cesty k nemu"
                 link="https://www.youtube.com/watch?v=NYf9hNqADYs&list=PLQ8x_VWW6Aktmp_v1eYcCBbO5GovP_sHl"
                 lessons="31. - 37."
               >
@@ -275,9 +276,9 @@ const App = () => {
             path="/setekHooksUseReducer"
             element={
               <Project
-                title="Projekt Hooks (useReducer)"
+                title="Projekt Hooks (useReducer) - spravené bez TS - doštudovať a prerobiť"
                 link="https://www.youtube.com/watch?v=NYf9hNqADYs&list=PLQ8x_VWW6Aktmp_v1eYcCBbO5GovP_sHl"
-                lessons="38. - ??."
+                lessons="38. - 51."
               >
                 <AppHooksUseReducer />
               </Project>
