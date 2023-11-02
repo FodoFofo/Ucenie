@@ -33,6 +33,7 @@ import AppMenu from './components/Setek/AppMenu/AppMenu'
 import AppHooksUseReducer from "./components/Setek/AppHooksUseReducer/AppHooksUseReducer";
 import AppProps1 from "./components/Setek/AppProps1/AppProps1";
 import AppUseContext from "./components/Setek/AppUseContext/AppUseContext";
+import AppCustomHook from "./components/Setek/AppCustomHook/AppCustomHook";
 
 const App = () => {
   return (
@@ -307,6 +308,18 @@ const App = () => {
                 lessons="54. - 57."
               >
                 <AppUseContext />
+              </Project>
+            }
+          />
+          <Route
+            path="/setekCustomHooks"
+            element={
+              <Project
+                title="Projekt vlastný Hook"
+                link="https://www.youtube.com/watch?v=NYf9hNqADYs&list=PLQ8x_VWW6Aktmp_v1eYcCBbO5GovP_sHl"
+                lessons="58. - ??."
+              >
+                <AppCustomHook />
               </Project>
             }
           />
