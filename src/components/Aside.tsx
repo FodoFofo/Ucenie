@@ -97,6 +97,9 @@ const Aside = () => {
           <NavLink className="project-link" to="/setekCustomHooks">
             Projekt vlastný Hook
           </NavLink>
+          <NavLink className="project-link" to="/setekPropsValidation">
+            Projekt validácia Props<span style={{color:"red"}}> - DOROBIŤ</span>
+          </NavLink>
         </CollapsibleMenu>
 
         <CollapsibleMenu title="React III" isOpenDefault={false} >

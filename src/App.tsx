@@ -34,6 +34,7 @@ import AppHooksUseReducer from "./components/Setek/AppHooksUseReducer/AppHooksUs
 import AppProps1 from "./components/Setek/AppProps1/AppProps1";
 import AppUseContext from "./components/Setek/AppUseContext/AppUseContext";
 import AppCustomHook from "./components/Setek/AppCustomHook/AppCustomHook";
+import AppPropsValidation from "./components/Setek/AppPropsValidation/AppPropsValidation";
 
 const App = () => {
   return (
@@ -317,9 +318,21 @@ const App = () => {
               <Project
                 title="Projekt vlastný Hook"
                 link="https://www.youtube.com/watch?v=NYf9hNqADYs&list=PLQ8x_VWW6Aktmp_v1eYcCBbO5GovP_sHl"
-                lessons="58. - ??."
+                lessons="58. - 62."
               >
                 <AppCustomHook />
+              </Project>
+            }
+          />
+          <Route
+            path="/setekPropsValidation"
+            element={
+              <Project
+                title="Projekt validácia Props - naštudovať modules > pozri Projekt Menu"
+                link="https://www.youtube.com/watch?v=NYf9hNqADYs&list=PLQ8x_VWW6Aktmp_v1eYcCBbO5GovP_sHl"
+                lessons="63. - 66."
+              >
+                <AppPropsValidation />
               </Project>
             }
           />
