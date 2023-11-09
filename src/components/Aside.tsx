@@ -5,25 +5,10 @@ import "./Aside.scss";
 import { CollapsibleMenu } from "./CollapsibleMenu";
 
 const Aside = () => {
-  const showHide = (e: React.MouseEvent<HTMLHeadingElement>) => {
-    const target = e.target as HTMLHeadingElement;
-    const sibling = target.nextSibling as Element;
-
-    if (sibling.classList.contains("hide")) {
-      sibling.classList.remove("hide");
-      target.textContent =
-        target.textContent?.replace("⤵", "⤴") || target.textContent;
-    } else {
-      sibling.classList.add("hide");
-      target.textContent =
-        target.textContent?.replace("⤴", "⤵") || target.textContent;
-    }
-  };
-
+ 
   return (
     <div className="aside">
-      <h2 onClick={showHide}>Dávid Šetek ⤴</h2>
-      <div className="david-setek">
+      <CollapsibleMenu title="Dávid Šetek" isOpenDefault={true}>
         <CollapsibleMenu title="React I" isOpenDefault={false}>
         <NavLink className="project-link" to="/setekBooks">
             Projekt Books
@@ -100,14 +85,28 @@ const Aside = () => {
           <NavLink className="project-link" to="/setekPropsValidation">
             Projekt validácia Props<span style={{color:"red"}}> - DOROBIŤ</span>
           </NavLink>
+          <NavLink className="project-link" to="/setekSearch">
+            Projekt vyhľadávanie
+          </NavLink>
         </CollapsibleMenu>
 
         <CollapsibleMenu title="React III" isOpenDefault={false} >
         <h5>doplniť</h5>
         </CollapsibleMenu>
 
-        
-      </div>
+      </CollapsibleMenu>
+
+      <hr style={{
+          background: "#898b8b",
+          width: "100%",
+          height: 5,
+        }}
+    />
+
+      <CollapsibleMenu title="Moje Appky" isOpenDefault={false} >
+        <h5>doplniť</h5>
+      </CollapsibleMenu>
+
     </div>
   );
 };

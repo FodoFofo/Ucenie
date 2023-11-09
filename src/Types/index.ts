@@ -1,6 +1,11 @@
 export interface MovieType {
     id: number,
-    name: string
+    name?: string,
+    image?: string,
+    title?: string,
+    age?: string,
+    tags?: string,
+    description?: string
 }
 
 export interface IssType {
