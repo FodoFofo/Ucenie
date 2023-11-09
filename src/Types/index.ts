@@ -11,3 +11,18 @@ export interface IssType {
         longitude: string
     }
 }
+
+export interface RecipeType {
+    id: number,
+    image?: string,
+    name: string,
+    ingredients: IngredietType[],
+    procedure: string,
+    tags?: string[],
+    note?: string
+} 
+
+export interface IngredietType {
+    name: string,
+    quantity: string
+}

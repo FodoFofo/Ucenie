@@ -35,6 +35,7 @@ import AppProps1 from "./components/Setek/AppProps1/AppProps1";
 import AppUseContext from "./components/Setek/AppUseContext/AppUseContext";
 import AppCustomHook from "./components/Setek/AppCustomHook/AppCustomHook";
 import AppPropsValidation from "./components/Setek/AppPropsValidation/AppPropsValidation";
+import AppRecipes from "./components/Fodo/Recepty/AppRecipes";
 
 const App = () => {
   return (
@@ -333,6 +334,18 @@ const App = () => {
                 lessons="63. - 66."
               >
                 <AppPropsValidation />
+              </Project>
+            }
+          />
+          <Route
+            path="/mojeRecipes"
+            element={
+              <Project
+                title="Recepty"
+                link=""
+                lessons=""
+              >
+                <AppRecipes />
               </Project>
             }
           />
