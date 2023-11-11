@@ -28,9 +28,6 @@ const AppAdvancedForm = () => {
         if(oneUser.fullName && oneUser.email && oneUser.age) {
             const newUser: User = { ...oneUser, id: new Date().getTime() }
 
-            console.log();
-            
-
             setUsers( (users) => {return [...users, newUser]})
             setOneUser({fullName: '', email: '', age: ''})
         } else {

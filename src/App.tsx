@@ -36,6 +36,7 @@ import AppUseContext from "./components/Setek/AppUseContext/AppUseContext";
 import AppCustomHook from "./components/Setek/AppCustomHook/AppCustomHook";
 import AppPropsValidation from "./components/Setek/AppPropsValidation/AppPropsValidation";
 import AppRecipes from "./components/Fodo/Recepty/AppRecipes";
+import AddRecipe from "./components/Fodo/Recepty/components/AddRecipe";
 
 const App = () => {
   return (
@@ -346,6 +347,18 @@ const App = () => {
                 lessons=""
               >
                 <AppRecipes />
+              </Project>
+            }
+          />
+          <Route
+            path="/mojeRecipes/AddRecipe"
+            element={
+              <Project
+                title="Recepty"
+                link=""
+                lessons=""
+              >
+                <AddRecipe />
               </Project>
             }
           />

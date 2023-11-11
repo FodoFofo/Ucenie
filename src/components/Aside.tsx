@@ -8,7 +8,7 @@ const Aside = () => {
 
   return (
     <div className="aside">
-      <CollapsibleMenu title="Dávid Šetek" isOpenDefault={true}>
+      <CollapsibleMenu title="Dávid Šetek" isOpenDefault={false}>
         <CollapsibleMenu title="React I" isOpenDefault={false}>
         <NavLink className="project-link" to="/setekBooks">
             Projekt Books
@@ -99,7 +99,7 @@ const Aside = () => {
         }}
     />
 
-      <CollapsibleMenu title="Moje Appky" isOpenDefault={false} >
+      <CollapsibleMenu title="Moje Appky" isOpenDefault={true} >
         <NavLink className="project-link" to="/mojeRecipes">
           Recepty
         </NavLink>
