@@ -5,12 +5,12 @@ import { NavLink } from 'react-router-dom'
 import './AddRecipe.scss'
 
 enum ActionKind {
-    SAVE = 'SAVE'
+    CHANGE_INPUT = 'CHANGE_INPUT'
 }
 
 interface Action {
     type: ActionKind
-    payload: number
+    payload?: any
 }
 
 interface State {
@@ -23,7 +23,16 @@ interface State {
 
 const reducer = (state: State, action: Action) => {
     
-    return state
+    switch(action.type) {
+        case 'CHANGE_INPUT': {
+            return {
+                ...state,
+                [action.payload.name]: action.payload.value
+            }
+        }
+        default: 
+            return state
+    }
 }
 
 const defaultState = {
@@ -60,25 +69,40 @@ const AddRecipe = () => {
                 <input
                     type="text"
                     placeholder='Zadaj názov receptu'
+                    name='recipeName'
+                    value={state.recipeName}
+                    onChange={(e) => dispatch({type: ActionKind.CHANGE_INPUT, payload: {name: e.target.name, value: e.target.value}})}
                 />
                 <div className='ingredients'>
                     <input
                         type="text"
                         placeholder='Zadaj názov ingrediencie'
+                        name='ingredientName'
+                        value={state.ingredientName}
+                        onChange={(e) => dispatch({type: ActionKind.CHANGE_INPUT, payload: {name: e.target.name, value: e.target.value}})}
                     />
                     <input
                         type="text"
                         placeholder='Zadaj množstvo a jednotku ingrediencie'
+                        name='ingredientQuantity'
+                        value={state.ingredientQuantity}
+                        onChange={(e) => dispatch({type: ActionKind.CHANGE_INPUT, payload: {name: e.target.name, value: e.target.value}})}
                     />
                     <div className="button" onClick={handleClick}>+</div>
                 </div>
                 <input
                     type="text"
                     placeholder='Vlož postup prípravy'
+                    name='recipeProcedure'
+                    value={state.recipeProcedure}
+                    onChange={(e) => dispatch({type: ActionKind.CHANGE_INPUT, payload: {name: e.target.name, value: e.target.value}})}
                 />
                 <input
                     type="text"
                     placeholder='Vlož poznámku'
+                    name='note'
+                    value={state.note}
+                    onChange={(e) => dispatch({type: ActionKind.CHANGE_INPUT, payload: {name: e.target.name, value: e.target.value}})}
                 />
                 <input
                     type="submit"
