@@ -1,4 +1,4 @@
-import { useReducer, useContext } from 'react'
+import { useContext } from 'react'
 import { NavLink } from 'react-router-dom'
 
 // štýly
@@ -7,55 +7,9 @@ import './AddRecipe.scss'
 // komponenty
 import RecipeContext from './RecipeContext'
 
-enum ActionKind {
-    CHANGE_INPUT = 'CHANGE_INPUT',
-    ADD_RECIPE = 'ADD_RECIPE'
-}
-
-interface Action {
-    type: ActionKind
-    payload?: any
-}
-
-interface State {
-    recipeName: string,
-    ingredientName: string,
-    ingredientQuantity: string,
-    recipeProcedure: string,
-    note: string
-}
-
-const reducer = (state: State, action: Action) => {
-    // eslint-disable-next-line react-hooks/rules-of-hooks
-    const { setRecipe, recipes } = useContext(RecipeContext)
-
-    switch(action.type) {
-        case 'CHANGE_INPUT': 
-            return {
-                ...state,
-                [action.payload.name]: action.payload.value
-            }
-        case 'ADD_RECIPE': 
-            setRecipe(...recipes, state)
-            return {
-                ...state,
-                defaultState    
-            }
-        default: 
-            return state
-    }
-}
-
-const defaultState = {
-    recipeName: '',
-    ingredientName: '',
-    ingredientQuantity: '',
-    recipeProcedure:'',
-    note: ''
-}
 
 const AddRecipe = () => {
-    const [state, dispatch] = useReducer(reducer, defaultState)
+    const {state, addRecipe, changeInput } = useContext(RecipeContext)
 
     const formSubmit: React.FormEventHandler<HTMLFormElement> = (e) => {
         e.preventDefault()
@@ -65,7 +19,7 @@ const AddRecipe = () => {
         console.log('state ', state.recipeProcedure);
         
         if(state.recipeName && state.ingredientName && state.recipeProcedure)
-            dispatch({type: ActionKind.ADD_RECIPE})
+            addRecipe();
     }
 
     const handleClick = () => {
@@ -87,7 +41,7 @@ const AddRecipe = () => {
                     placeholder='Zadaj názov receptu'
                     name='recipeName'
                     value={state.recipeName}
-                    onChange={(e) => dispatch({type: ActionKind.CHANGE_INPUT, payload: {name: e.target.name, value: e.target.value}})}
+                    onChange={(e) => changeInput(e.target.name, e.target.value)}
                 />
                 <div className='ingredients'>
                     <input
@@ -95,14 +49,14 @@ const AddRecipe = () => {
                         placeholder='Zadaj názov ingrediencie'
                         name='ingredientName'
                         value={state.ingredientName}
-                        onChange={(e) => dispatch({type: ActionKind.CHANGE_INPUT, payload: {name: e.target.name, value: e.target.value}})}
+                        onChange={(e) => changeInput(e.target.name, e.target.value)}
                     />
                     <input
                         type="text"
                         placeholder='Zadaj množstvo a jednotku ingrediencie'
                         name='ingredientQuantity'
                         value={state.ingredientQuantity}
-                        onChange={(e) => dispatch({type: ActionKind.CHANGE_INPUT, payload: {name: e.target.name, value: e.target.value}})}
+                        onChange={(e) => changeInput(e.target.name,e.target.value)}
                     />
                     <div className="button" onClick={handleClick}>+</div>
                 </div>
@@ -111,14 +65,14 @@ const AddRecipe = () => {
                     placeholder='Vlož postup prípravy'
                     name='recipeProcedure'
                     value={state.recipeProcedure}
-                    onChange={(e) => dispatch({type: ActionKind.CHANGE_INPUT, payload: {name: e.target.name, value: e.target.value}})}
+                    onChange={(e) => changeInput(e.target.name, e.target.value)}
                 />
                 <input
                     type="text"
                     placeholder='Vlož poznámku'
                     name='note'
                     value={state.note}
-                    onChange={(e) => dispatch({type: ActionKind.CHANGE_INPUT, payload: {name: e.target.name, value: e.target.value}})}
+                    onChange={(e) => changeInput(e.target.name,e.target.value)}
                 />
                 <input
                     type="submit"
