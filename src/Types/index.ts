@@ -24,5 +24,5 @@ export interface RecipeType {
 
 export interface IngredietType {
     name: string,
-    quantity: string
+    quantity?: string
 }

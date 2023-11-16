@@ -1,11 +1,15 @@
-import { useReducer } from 'react'
+import { useReducer, useContext } from 'react'
 import { NavLink } from 'react-router-dom'
 
 // štýly
 import './AddRecipe.scss'
 
+// komponenty
+import RecipeContext from './RecipeContext'
+
 enum ActionKind {
-    CHANGE_INPUT = 'CHANGE_INPUT'
+    CHANGE_INPUT = 'CHANGE_INPUT',
+    ADD_RECIPE = 'ADD_RECIPE'
 }
 
 interface Action {
@@ -22,14 +26,21 @@ interface State {
 }
 
 const reducer = (state: State, action: Action) => {
-    
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    const { setRecipe, recipes } = useContext(RecipeContext)
+
     switch(action.type) {
-        case 'CHANGE_INPUT': {
+        case 'CHANGE_INPUT': 
             return {
                 ...state,
                 [action.payload.name]: action.payload.value
             }
-        }
+        case 'ADD_RECIPE': 
+            setRecipe(...recipes, state)
+            return {
+                ...state,
+                defaultState    
+            }
         default: 
             return state
     }
@@ -49,7 +60,12 @@ const AddRecipe = () => {
     const formSubmit: React.FormEventHandler<HTMLFormElement> = (e) => {
         e.preventDefault()
 
-        // const newRecipe = 
+        console.log('state ', state.recipeName);
+        console.log('state ', state.ingredientName);
+        console.log('state ', state.recipeProcedure);
+        
+        if(state.recipeName && state.ingredientName && state.recipeProcedure)
+            dispatch({type: ActionKind.ADD_RECIPE})
     }
 
     const handleClick = () => {
