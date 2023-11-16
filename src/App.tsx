@@ -37,6 +37,7 @@ import AppCustomHook from "./components/Setek/AppCustomHook/AppCustomHook";
 import AppPropsValidation from "./components/Setek/AppPropsValidation/AppPropsValidation";
 import AppRecipes from "./components/Fodo/Recepty/AppRecipes";
 import AddRecipe from "./components/Fodo/Recepty/components/AddRecipe";
+import { RecipeProvider } from "./components/Fodo/Recepty/components/RecipeContext";
 
 const App = () => {
   return (
@@ -45,6 +46,7 @@ const App = () => {
         <Navigation />
       </header>
       <main>
+      <RecipeProvider>
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/projects" element={<Projects />} />
@@ -363,6 +365,7 @@ const App = () => {
             }
           />
         </Routes>
+        </RecipeProvider>
       </main>
 
       <footer>&copy; Foďo 2023</footer>
