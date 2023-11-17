@@ -32,6 +32,7 @@ export const recipeReducer = (state: State, action: Action) => {
         [action.payload.name]: action.payload.value,
       };
     case ActionKind.ADD_RECIPE:
+      
       return {
         ...state,
         defaultState 

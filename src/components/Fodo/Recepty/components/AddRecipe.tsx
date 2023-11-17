@@ -13,17 +13,14 @@ const AddRecipe = () => {
 
     const formSubmit: React.FormEventHandler<HTMLFormElement> = (e) => {
         e.preventDefault()
-
-        console.log('state ', state.recipeName);
-        console.log('state ', state.ingredientName);
-        console.log('state ', state.recipeProcedure);
         
         if(state.recipeName && state.ingredientName && state.recipeProcedure)
             addRecipe();
     }
 
     const handleClick = () => {
-        alert('KUK')
+        // TODO: doplniť pridanie inputov pre ingrediencie
+        alert('TODO: doplniť pridanie inputov pre ingrediencie')
     }
 
     return (
