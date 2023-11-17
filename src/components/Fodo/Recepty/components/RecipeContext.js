@@ -1,15 +1,7 @@
 import { useReducer, createContext } from "react";
-import { ActionKind, recipeReducer } from "../utilities/RecipeReducer";
+import { ActionKind, recipeReducer, defaultState } from "../utilities/RecipeReducer";
 
 const RecipeContext = createContext();
-
-const defaultState = {
-  recipeName: "",
-  ingredientName: "",
-  ingredientQuantity: "",
-  recipeProcedure: "",
-  note: "",
-};
 
 export const RecipeProvider = ({ children }) => {
   const [state, dispatch] = useReducer(recipeReducer, defaultState);

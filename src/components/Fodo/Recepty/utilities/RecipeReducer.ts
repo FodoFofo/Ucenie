@@ -16,7 +16,7 @@ interface State {
   note: string;
 }
 
-const defaultState = {
+export const defaultState = {
     recipeName: "",
     ingredientName: "",
     ingredientQuantity: "",
@@ -32,7 +32,7 @@ export const recipeReducer = (state: State, action: Action) => {
         [action.payload.name]: action.payload.value,
       };
     case ActionKind.ADD_RECIPE:
-      
+      //TODO: Doplniť pridanie receptu setRecipes() 
       return {
         ...state,
         defaultState 
