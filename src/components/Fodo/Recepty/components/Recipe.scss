@@ -1,3 +1,15 @@
+img {
+    width: 200px;
+    height: 200px;
+}
+.tag {
+    background-color: rgb(71, 202, 202);
+    margin: 0.4rem;
+    padding: 0.1rem 0.4rem 0.3rem;
+    border-radius: 0.8rem;
+    box-shadow: 1px 1px 10px rgb(15, 30, 46);
+    font-size: 0.8rem;
+}
 .recipe {
     display: flex;
     flex-direction: row;
@@ -25,5 +37,12 @@
     
     h3 {
         font-size: 1.1rem;
+    }
+}
+.note {
+    text-align: start;
+
+    span {
+        font-weight: 700;
     }
 }

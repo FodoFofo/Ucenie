@@ -1,7 +1,11 @@
 import { Route, Routes } from "react-router-dom";
+import { useState } from "react";
 
 // štýly
 import "./App.scss";
+
+// dáta
+import inputData from "./components/Fodo/Recepty/recipes"
 
 // views
 import Main from "./Views/Main";
@@ -40,13 +44,15 @@ import AddRecipe from "./components/Fodo/Recepty/components/AddRecipe";
 import { RecipeProvider } from "./components/Fodo/Recepty/components/RecipeContext";
 
 const App = () => {
+  const [recipes, setRecipes] = useState(inputData)
+
   return (
     <div className="App">
       <header>
         <Navigation />
       </header>
       <main>
-        <RecipeProvider>
+        <RecipeProvider props={{recipes, setRecipes}}>
           <Routes>
             <Route path="/" element={<Main />} />
             <Route path="/projects" element={<Projects />} />

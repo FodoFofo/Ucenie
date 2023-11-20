@@ -12,12 +12,19 @@ export interface IssType {
     }
 }
 
+//---------------------------
+//------- APP RECEPTY -------
+//---------------------------
+
 export interface RecipeType {
     id: number,
     image?: string,
-    name: string,
-    ingredients: IngredietType[],
-    procedure: string,
+    recipeName: string,
+    // TODO Zataiľ uvedené ingredientName a ingredientQuantity pre účely vývoja, potom zmeniť na pole - nižšie je teraz zakomentované
+    ingredientName: string;
+    ingredientQuantity: string;
+    //ingredients: IngredietType[],
+    recipeProcedure: string,
     tags?: string[],
     note?: string
 } 

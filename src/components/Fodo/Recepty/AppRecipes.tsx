@@ -1,38 +1,36 @@
-import { useState } from "react";
+import { useContext } from "react";
 import { NavLink } from "react-router-dom";
 
 // komponenty
 import Recipe from "./components/Recipe"
 import RecipeContext from "./components/RecipeContext";
 
-// dáta
-import inputData from "./recipes"
+// typy
+import { RecipeType } from "../../../Types/index";
 
 // štýly
 import './AppRecipes.scss'
 
 const AppRecipes = () => {
-    const [recipes, setRecipes] = useState(inputData)
-    
+    const { state } = useContext(RecipeContext)
+
     return (
-        <RecipeContext.Provider value={{setRecipes, recipes}}>
-            <div className="app-recipes">
-                <div className="navigation">
-                    <NavLink className="app-recipe-link" to="/mojeRecipes">
-                        Recepty
-                    </NavLink>
-                    <NavLink className="app-recipe-link" to="/mojeRecipes/AddRecipe">
-                        Pridanie receptu
-                    </NavLink>
-                    <NavLink className="app-recipe-link" to="/mojeRecipes/SearchRecipes">
-                        Vyhľadanie receptov
-                    </NavLink>
-                </div>
-                {recipes.map( (recipe) => {
-                    return <Recipe recipe={recipe} />
-                })}
+        <div className="app-recipes">
+            <div className="navigation">
+                <NavLink className="app-recipe-link" to="/mojeRecipes">
+                    Recepty
+                </NavLink>
+                <NavLink className="app-recipe-link" to="/mojeRecipes/AddRecipe">
+                    Pridanie receptu
+                </NavLink>
+                <NavLink className="app-recipe-link" to="/mojeRecipes/SearchRecipes">
+                    Vyhľadanie receptov
+                </NavLink>
             </div>
-        </RecipeContext.Provider>
+            {state.map( (recipe: RecipeType) => {
+                return <Recipe key={recipe.id} recipe={recipe} />
+            })}
+        </div>
     )
 }
 

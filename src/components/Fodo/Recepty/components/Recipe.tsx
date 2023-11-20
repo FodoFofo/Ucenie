@@ -1,4 +1,3 @@
-
 // štýly
 import './Recipe.scss'
 
@@ -10,28 +9,41 @@ type Props = {
 }
 
 const Recipe = ( {recipe}: Props) => {
-    const {name, ingredients, procedure }= recipe
+    const { image, recipeName, ingredientName, ingredientQuantity, recipeProcedure, tags, note }= recipe
 
     return (
         <>
-            <h2>{name}</h2>
+            <h2>{recipeName}</h2>
+            <img src={image || 'food.svg'} alt="" />
+            {tags?.map( (tag) => {
+                return <span className='tag'>{tag}</span>
+            })}
             <div className='recipe'>
                 <div className="ingredients">
                     <h3>Suroviny</h3>
                     <table>
-                        {ingredients.map( (ingredient) => {
-                            return <tr>
-                                <td>{ingredient.quantity}</td>
-                                <td>{ingredient.name}</td>
+                        <tbody>
+                            <tr>
+                                <td>{ingredientName}</td>
+                                <td>{ingredientQuantity}</td>
                             </tr>
-                        })}
+                        {/* {ingredients.map( (ingredient) => {
+                            return <tr>
+                            <td>{ingredient.quantity}</td>
+                            <td>{ingredient.name}</td>
+                            </tr>
+                        })} */}
+                        </tbody>
                     </table>
 
                 </div>
                 <div className="procedure">
                     <h3>Postup</h3>
-                    <p>{procedure}.</p>
+                    <p>{recipeProcedure}.</p>
                 </div>
+            </div>
+            <div className="note">
+                <span>Poznámky:</span> {note}
             </div>
         </>
     )

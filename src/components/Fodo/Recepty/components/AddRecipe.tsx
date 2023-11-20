@@ -9,13 +9,20 @@ import RecipeContext from './RecipeContext'
 
 
 const AddRecipe = () => {
-    const {state, addRecipe, changeInput } = useContext(RecipeContext)
+    const { addRecipe } = useContext(RecipeContext)
 
     const formSubmit: React.FormEventHandler<HTMLFormElement> = (e) => {
         e.preventDefault()
         
-        if(state.recipeName && state.ingredientName && state.recipeProcedure)
-            addRecipe();
+        // if(state.recipeName && state.ingredientName && state.recipeProcedure)
+        //     addRecipe({state});
+
+        const formData = new FormData(e.currentTarget)
+        formData.append('id', new Date().getTime().toString())
+        formData.append('image', '')
+        
+        const newRecipe = Object.fromEntries(formData.entries())
+        addRecipe(newRecipe)
     }
 
     const handleClick = () => {
@@ -37,23 +44,17 @@ const AddRecipe = () => {
                     type="text"
                     placeholder='Zadaj názov receptu'
                     name='recipeName'
-                    value={state.recipeName}
-                    onChange={(e) => changeInput(e.target.name, e.target.value)}
                 />
                 <div className='ingredients'>
                     <input
                         type="text"
                         placeholder='Zadaj názov ingrediencie'
                         name='ingredientName'
-                        value={state.ingredientName}
-                        onChange={(e) => changeInput(e.target.name, e.target.value)}
                     />
                     <input
                         type="text"
                         placeholder='Zadaj množstvo a jednotku ingrediencie'
                         name='ingredientQuantity'
-                        value={state.ingredientQuantity}
-                        onChange={(e) => changeInput(e.target.name,e.target.value)}
                     />
                     <div className="button" onClick={handleClick}>+</div>
                 </div>
@@ -61,15 +62,11 @@ const AddRecipe = () => {
                     type="text"
                     placeholder='Vlož postup prípravy'
                     name='recipeProcedure'
-                    value={state.recipeProcedure}
-                    onChange={(e) => changeInput(e.target.name, e.target.value)}
                 />
                 <input
                     type="text"
                     placeholder='Vlož poznámku'
                     name='note'
-                    value={state.note}
-                    onChange={(e) => changeInput(e.target.name,e.target.value)}
                 />
                 <input
                     type="submit"

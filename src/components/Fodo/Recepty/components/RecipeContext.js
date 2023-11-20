@@ -3,13 +3,24 @@ import { ActionKind, recipeReducer, defaultState } from "../utilities/RecipeRedu
 
 const RecipeContext = createContext();
 
-export const RecipeProvider = ({ children }) => {
+export const RecipeProvider = ({ props, children }) => {
   const [state, dispatch] = useReducer(recipeReducer, defaultState);
 
-  const addRecipe = (recipe) => {
+  
+  const addRecipe = ({id, image, recipeName, ingredientName, ingredientQuantity, recipeProcedure, tags, note}) => {
+    const newRecipe = {
+      id,
+      image,
+      recipeName,
+      ingredientName,
+      ingredientQuantity,
+      recipeProcedure,
+      tags,
+      note
+    }
     dispatch({
       type: ActionKind.ADD_RECIPE,
-      payload: recipe,
+      payload: newRecipe,
     });
   };
 
@@ -18,7 +29,7 @@ export const RecipeProvider = ({ children }) => {
       type: ActionKind.CHANGE_INPUT,
       payload: {
         name,
-        value
+        value,
       },
     });
   };

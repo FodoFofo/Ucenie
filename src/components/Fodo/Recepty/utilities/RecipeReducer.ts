@@ -1,3 +1,8 @@
+import recipes from "../recipes";
+
+// typy
+import { RecipeType } from "../../../../Types/index";
+
 export enum ActionKind {
   CHANGE_INPUT = "CHANGE_INPUT",
   ADD_RECIPE = "ADD_RECIPE",
@@ -8,23 +13,9 @@ interface Action {
   payload?: any;
 }
 
-interface State {
-  recipeName: string;
-  ingredientName: string;
-  ingredientQuantity: string;
-  recipeProcedure: string;
-  note: string;
-}
+export const defaultState = recipes;
 
-export const defaultState = {
-    recipeName: "",
-    ingredientName: "",
-    ingredientQuantity: "",
-    recipeProcedure: "",
-    note: "",
-  };
-
-export const recipeReducer = (state: State, action: Action) => {
+export const recipeReducer = (state: RecipeType[], action: Action) => {
   switch (action.type) {
     case ActionKind.CHANGE_INPUT:
       return {
@@ -32,11 +23,12 @@ export const recipeReducer = (state: State, action: Action) => {
         [action.payload.name]: action.payload.value,
       };
     case ActionKind.ADD_RECIPE:
-      //TODO: Doplniť pridanie receptu setRecipes() 
-      return {
-        ...state,
-        defaultState 
-      };
+      const newRecipe = action.payload
+      
+      return [
+      ...state,
+      newRecipe
+      ]
     default: {
       // Tu je lepsie thrownut error, pretoze vsetky "ActionKind"-y si uz vycerpal, v pripade ze pouzijes iny ActionKind ako si si sam urcil v tom enume, je dobre aby ta to upozornilo ze pouzivas nieco pre co neni vytvoreny case.
       throw new Error("Dispatchujes neexistujucu akciu.");
