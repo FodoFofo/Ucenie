@@ -9,30 +9,26 @@ type Props = {
 }
 
 const Recipe = ( {recipe}: Props) => {
-    const { image, recipeName, ingredientName, ingredientQuantity, recipeProcedure, tags, note }= recipe
+    const { image, recipeName, ingredients, recipeProcedure, tags, note }= recipe
 
     return (
         <>
             <h2>{recipeName}</h2>
             <img src={image || 'food.svg'} alt="" />
-            {tags?.map( (tag) => {
-                return <span className='tag'>{tag}</span>
+            {tags?.map( (tag, i) => {
+                return <span key={new Date().getTime()+i} className='tag'>{tag}</span>
             })}
             <div className='recipe'>
                 <div className="ingredients">
                     <h3>Suroviny</h3>
                     <table>
                         <tbody>
-                            <tr>
-                                <td>{ingredientName}</td>
-                                <td>{ingredientQuantity}</td>
-                            </tr>
-                        {/* {ingredients.map( (ingredient) => {
+                            {ingredients?.map( (ingredient) => {
                             return <tr>
                             <td>{ingredient.quantity}</td>
                             <td>{ingredient.name}</td>
                             </tr>
-                        })} */}
+                        })}
                         </tbody>
                     </table>
 

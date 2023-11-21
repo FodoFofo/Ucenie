@@ -7,13 +7,12 @@ export const RecipeProvider = ({ props, children }) => {
   const [state, dispatch] = useReducer(recipeReducer, defaultState);
 
   
-  const addRecipe = ({id, image, recipeName, ingredientName, ingredientQuantity, recipeProcedure, tags, note}) => {
+  const addRecipe = ({id, image, recipeName, ingredients, recipeProcedure, tags, note}) => {
     const newRecipe = {
       id,
       image,
       recipeName,
-      ingredientName,
-      ingredientQuantity,
+      ingredients,
       recipeProcedure,
       tags,
       note

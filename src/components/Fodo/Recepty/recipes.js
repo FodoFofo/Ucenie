@@ -95,7 +95,7 @@ const recipes = [
     note: "Robil som, možno dať trochu menej vody, skúsiť 220 ml"
   },
   {
-    id: 17003947892136,
+    id: 1700394789216,
     image: "",
     recipeName: "Bezlepkový chlieb",
     ingredients: [

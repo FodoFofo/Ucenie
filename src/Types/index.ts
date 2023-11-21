@@ -20,10 +20,7 @@ export interface RecipeType {
     id: number,
     image?: string,
     recipeName: string,
-    // TODO Zataiľ uvedené ingredientName a ingredientQuantity pre účely vývoja, potom zmeniť na pole - nižšie je teraz zakomentované
-    ingredientName: string;
-    ingredientQuantity: string;
-    //ingredients: IngredietType[],
+    ingredients: IngredietType[],
     recipeProcedure: string,
     tags?: string[],
     note?: string
