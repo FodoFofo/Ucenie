@@ -256,10 +256,186 @@ const recipes = [
           quantity:"podľa chuti"
         },
       ],
-      recipeProcedure: "Vo vlažnej vode rozpustiť droždia a cukor alebo med- nechať 10 min. Doplniť ostatné suroviny a dobre zmiešať. Zakryť a nechať 30-40 minút kysnúť. Preložiť na papier na pečenie a vytvarovať bochník. Nechať 30 minút kysnúť. Do rúry vloziť na spodok misku na vodu a zohriať rúru na 220 °C. Po vložení bochníka naliať do misky vodu. Piecť na 220°C 10 minút, potom vybrať misku z vodou, znížiť teplotu na 200°C a nechať 15 minút piecť, potom znížiť teplotu na 180 °C a dopiecť 20 minút. Vyložiť chlieb na mriežku a nechať vychladnúť.",
+      recipeProcedure: "Vo vlažnej vode rozpustiť droždie a cukor alebo med a nechať 10 min. Doplniť ostatné suroviny a dobre zmiešať. Zakryť a nechať 30-40 minút kysnúť. Preložiť na papier na pečenie a vytvarovať bochník. Nechať 30 minút kysnúť. Do rúry vloziť na spodok misku na vodu a zohriať rúru na 220 °C. Po vložení bochníka naliať do misky vodu. Piecť na 220°C 10 minút, potom vybrať misku z vodou, znížiť teplotu na 200°C a nechať 15 minút piecť, potom znížiť teplotu na 180 °C a dopiecť 20 minút. Vyložiť chlieb na mriežku a nechať vychladnúť.",
       tags: ["bezlepkové", "chlieb"],
       note: "Robil som, a je dobrý, len nabudúce spraviť z dvojnásobného množstva"
     },
+    {
+      id: "1700716277439",
+      image: "",
+      recipeName: "Chlieb (vlastný)",
+      ingredients: [
+        {
+          name: "voda",
+          quantity: "450 ml"
+        },
+        {
+          name: "droždie",
+          quantity: "21 g"
+        },
+        {
+          name: "cukor",
+          quantity: "1 KL"
+        },
+        {
+          name: "zmes mix per pane con Farina integrale (NutriFree)",
+          quantity: "350 g"
+        },
+        {
+          name: "zmes mix B (Schar)",
+          quantity: "150 g"
+        },
+        {
+          name: "olivový olej",
+          quantity: "2 PL"
+        },
+        {
+          name: "soľ",
+          quantity: "2 KL"
+        }
+      ],
+      note: "Nebol moc dobrý ani chuťovo, a rozpadal sa od druhého dňa.",
+      recipeProcedure: "Droždie, teplú vodu a cukor zmišame a necháme 15 min vzísť kvások. Potom pridáme ostatné ingrediencie a poriadne premiešame. Zakryjeme a necháme cca 40 minút kysnúť. Vyložiť na papier na pečenie a vytvarovať bochník a nechať ešte cca 20-30 minút kysnúť. Vložiť do rúry nádobu na záparu a vyhriať rúru na 220°C. Pozohriati rúry vložiť bochník a vyliať do nádoby na záparu cca 2 dl vody. Piecť 15 minút na 220°C, vybrať nádobu na záparu a 25 minút na 200°C",
+      tags: ['chlieb', 'bezlepkový']
+    },
+    {
+          id: 1700716277440,
+          image: "",
+          recipeName: "Chlieb kváskový (vlastný)",
+          ingredients: [
+            {
+              name: "ŠTARTÉR",
+              quantity:""
+            },
+            {
+              name: "voda",
+              quantity:"200 ml"
+            },
+            {
+              name: "kvások",
+              quantity:"2 PL"
+            },
+            {
+              name: "Mix B (Schar)",
+              quantity:"150 g"
+            },
+            {
+              name: "CESTO",
+              quantity:""
+            },
+            {
+              name: "voda",
+              quantity:"250 ml"
+            },
+            {
+              name: "chia semiačka",
+              quantity:"2 KL"
+            },
+            {
+              name: "Dunkel Rustico (Schar)",
+              quantity:"300 g"
+            },
+            {
+              name: "zmes mix per pane con Farina integrale (NutriFree)",
+              quantity:"50 g"
+            },
+            {
+              name: "soľ",
+              quantity:"2 KL"
+            },
+            {
+              name: "olivový olej",
+              quantity:"1 PL"
+            },
+          ],
+          recipeProcedure: "Zmiešame suroviny na štarér a necháme prikryté cca 12h. | Namočíme chia semiačka do cca 150 ml vody na 15 minút. | Potom zmiešme sšetky suroviny na cesto aj zo štartérom a necháme zakryté cca 2-3 hodiny. | Vyklopíme cesto na papier na pečenie, vytvarujeme bochník a nechame kysnúť cca 1-2 hodiny. | Vložime do rúry nádobu na záparu a vyhrejeme rúru na 220°C. Pozohriati rúry vložíme bochník a vylejeme do nádoby na záparu cca 2 dl vody. Pečieme 10 minút na 220°C, vyberieme nádobu na záparu a pečieme 15 minút na 200°C, zížime teplotu a dopečieme na 180°C cca 20 minút. Potom dáme bochník vychladnuť na mriežku.",
+          tags: ["chlieb"],
+          note: ""
+        },
+        {
+          id: 1700716277441,
+          image: "",
+          recipeName: "Knedľa",
+          ingredients: [
+            {
+              name: "Promix Alfa (Novalim)",
+              quantity:"330 g"
+            },
+            {
+              name: "vlažná voda",
+              quantity:"250 ml"
+            },
+            {
+              name: "čerstvé droždie",
+              quantity:"21 g"
+            },
+            {
+              name: "cukor",
+              quantity:"1 KL"
+            },
+            {
+              name: "soľ",
+              quantity:"1 KL"
+            },
+            {
+              name: "vajce",
+              quantity:"1 ks"
+            },
+            {
+              name: "Burizony",
+              quantity:"za hrsť"
+            },
+          ],
+          recipeProcedure: "Zamiešame vlažnú vodu droždie a cukor a nechame 15 minút, potom doplníme ostatné suroviny a zamiešame. Vytvarujeme knedľu a necháme ešte cca 45 minúť kysnúť. V parnom hrnci paríme 25-30 minút.",
+          tags: ["knedľa", "bezlepkové"],
+          note: "Ak by bolo málo vody, treba doplniť, ja som oproti pôvodnému receptu znížil množstvo o 50 ml"
+        },
+        {
+              id: 1700716277443,
+              image: "",
+              recipeName: "Chlieb (zo zbytkov)",
+              ingredients: [
+                {
+                  name: "Bread Mix (Liana)",
+                  quantity:"211 g"
+                },
+                {
+                  name: "Promix-T (Novalim)",
+                  quantity:"236 g"
+                },
+                {
+                  name: "Mix B (Schar)",
+                  quantity:"325 g"
+                },
+                {
+                  name: "čerstvé droždie",
+                  quantity:"21 g"
+                },
+                {
+                  name: "cukor",
+                  quantity:"2 KL"
+                },
+                {
+                  name: "soľ",
+                  quantity:"2,5 KL"
+                },
+                {
+                  name: "semienka",
+                  quantity:"podľa chuti"
+                },
+                {
+                  name: "olivový olej",
+                  quantity:"2 PL"
+                },
+                {
+                  name: "voda",
+                  quantity:"550 - 600 ml"
+                },
+              ],
+              recipeProcedure: "Zamiešame vlažnú vodu droždie a cukor a nechame 15 minút, potom doplníme ostatné suroviny a zamiešame. Vytvarujeme bochník a necháme ešte cca 45 minúť kysnúť. Vložíme do rúry nádobu na záparu a zohrejeme rúru, naleleme cca 2 dl do nádoby na záparu a pečieme na 220 °C 10 minút, potom vyberieme nádobu na záparu a znížime teplotu na 200 °C a perčieme 15 minút, potom znížime teplotu na 180°C a dopekáme 20 minút. Chlieb necháme vychladnúť na mriežke.",
+              tags: ["chlieb", "bezlepkové"],
+              note: ""
+            },
 ];
   
 export default recipes;
