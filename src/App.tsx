@@ -36,6 +36,7 @@ import AppUseContext from "./components/Setek/AppUseContext/AppUseContext";
 import AppCustomHook from "./components/Setek/AppCustomHook/AppCustomHook";
 import AppPropsValidation from "./components/Setek/AppPropsValidation/AppPropsValidation";
 import AppSearch from "./components/Setek/AppSearch/AppSearch";
+import AppBattleShip from "./components/Fodo/BattleShip/AppBattleShip";
 
 const App = () => {
   return (
@@ -346,6 +347,19 @@ const App = () => {
                 lessons="67. - 72."
               >
                 <AppSearch />
+              </Project>
+            }
+          />
+
+          <Route
+            path="/battleShip"
+            element={
+              <Project
+                title="Hra Battleship"
+                link=""
+                lessons=""
+              >
+                <AppBattleShip />
               </Project>
             }
           />

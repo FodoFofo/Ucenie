@@ -91,7 +91,7 @@ const Aside = () => {
         </CollapsibleMenu>
 
         <CollapsibleMenu title="React III" isOpenDefault={false} >
-        <h5>doplniť</h5>
+          <h5>doplniť</h5>
         </CollapsibleMenu>
 
       </CollapsibleMenu>
@@ -104,7 +104,9 @@ const Aside = () => {
     />
 
       <CollapsibleMenu title="Moje Appky" isOpenDefault={false} >
-        <h5>doplniť</h5>
+          <NavLink className="project-link" to="/battleShip">
+            Hra Battleship
+          </NavLink>
       </CollapsibleMenu>
 
     </div>
