@@ -96,6 +96,10 @@ const Aside = () => {
 
       </CollapsibleMenu>
 
+      <CollapsibleMenu title="YABLKO" isOpenDefault={false} >
+        <a href="./Yablko/Zadanie10/index.html">Web worker</a>
+      </CollapsibleMenu>
+
       <hr style={{
           background: "#898b8b",
           width: "100%",
