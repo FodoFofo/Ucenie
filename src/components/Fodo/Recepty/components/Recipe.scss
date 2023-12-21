@@ -1,0 +1,48 @@
+img {
+    width: 200px;
+    height: 200px;
+}
+.tag {
+    background-color: rgb(71, 202, 202);
+    margin: 0.4rem;
+    padding: 0.1rem 0.4rem 0.3rem;
+    border-radius: 0.8rem;
+    box-shadow: 1px 1px 10px rgb(15, 30, 46);
+    font-size: 0.8rem;
+}
+.recipe {
+    display: flex;
+    flex-direction: row;
+    text-align: start;
+    
+    table {
+        width: 20vw;
+        border-spacing: 0;
+        table-layout: fixed;
+
+        td:nth-child(1) {
+            width: 30%;
+        }
+        td:nth-child(2) {
+            width: 60%;
+        }
+        td {
+            padding: 0 0 0.5rem ;
+            text-align: start;
+            font-weight: 100;
+            padding-right: 0.8rem;
+            border: none;
+        }
+    }
+    
+    h3 {
+        font-size: 1.1rem;
+    }
+}
+.note {
+    text-align: start;
+
+    span {
+        font-weight: 700;
+    }
+}

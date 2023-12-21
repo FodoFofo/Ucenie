@@ -16,3 +16,22 @@ export interface IssType {
         longitude: string
     }
 }
+
+//---------------------------
+//------- APP RECEPTY -------
+//---------------------------
+
+export interface RecipeType {
+    id: number,
+    image?: string,
+    recipeName: string,
+    ingredients: IngredietType[],
+    recipeProcedure: string,
+    tags?: string[],
+    note?: string
+} 
+
+export interface IngredietType {
+    name: string,
+    quantity?: string
+}

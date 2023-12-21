@@ -5,10 +5,10 @@ import "./Aside.scss";
 import { CollapsibleMenu } from "./CollapsibleMenu";
 
 const Aside = () => {
- 
+
   return (
     <div className="aside">
-      <CollapsibleMenu title="Dávid Šetek" isOpenDefault={true}>
+      <CollapsibleMenu title="Dávid Šetek" isOpenDefault={false}>
         <CollapsibleMenu title="React I" isOpenDefault={false}>
         <NavLink className="project-link" to="/setekBooks">
             Projekt Books
@@ -54,7 +54,7 @@ const Aside = () => {
           </NavLink>
         </CollapsibleMenu>
 
-        <CollapsibleMenu title="React II">
+        <CollapsibleMenu title="React II" isOpenDefault={false}>
           <NavLink className="project-link" to="/setekFormular">
             Formulár
           </NavLink>
@@ -93,7 +93,6 @@ const Aside = () => {
         <CollapsibleMenu title="React III" isOpenDefault={false} >
         <h5>doplniť</h5>
         </CollapsibleMenu>
-
       </CollapsibleMenu>
 
       <hr style={{
@@ -103,10 +102,12 @@ const Aside = () => {
         }}
     />
 
-      <CollapsibleMenu title="Moje Appky" isOpenDefault={false} >
-        <h5>doplniť</h5>
+      <CollapsibleMenu title="Moje Appky" isOpenDefault={true} >
+        <NavLink className="project-link" to="/mojeRecipes">
+          Recepty
+        </NavLink>
       </CollapsibleMenu>
-
+        
     </div>
   );
 };
