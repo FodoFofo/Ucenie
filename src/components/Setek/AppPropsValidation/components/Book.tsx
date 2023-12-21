@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types'
+//import PropTypes from 'prop-types'
 // import defaulImage from '../images/book-default.jpg'
 
 type Props = {
@@ -18,11 +18,11 @@ const Book = ({image, title, price}: Props) => {
   )
 }
 
-Book.propTypes = {
-    image:PropTypes.string.isRequired,
-    title:PropTypes.string.isRequired,
-    price:PropTypes.number.isRequired
-}
+// Book.propTypes = {
+//     image:PropTypes.string.isRequired,
+//     title:PropTypes.string.isRequired,
+//     price:PropTypes.number.isRequired
+// }
 
 // Defaultné hodnoty
 // Book.defaultProps = {
