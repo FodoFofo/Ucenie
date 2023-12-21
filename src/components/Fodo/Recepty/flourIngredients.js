@@ -29,7 +29,6 @@ export const flourIngredients = [
             {
                 name: "jedlá soľ",
             },
-           
         ],
      
       note: "Môže obsahovať sóju. BEZ LAKTÓZY (laktozy <0,007g/100g)"

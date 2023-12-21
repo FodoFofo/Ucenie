@@ -396,7 +396,7 @@ const recipes = [
               recipeName: "Chlieb (zo zbytkov)",
               ingredients: [
                 {
-                  name: "Bread Mix (Liana)",
+                  name: "Bread Mix Dark (Liana)",
                   quantity:"211 g"
                 },
                 {
