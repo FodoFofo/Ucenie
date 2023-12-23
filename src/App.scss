@@ -1,6 +1,10 @@
 .App {
   text-align: center;
-  
+
+  main {
+    overflow: hidden;
+  }
+
   footer {
     margin-top: 0.3em;
     background-color: #36386c;
