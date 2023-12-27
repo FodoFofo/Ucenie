@@ -1,6 +1,10 @@
 // styles
 import './Task.scss'
+import { FaEdit, FaRegTrashAlt, FaTimesCircle, FaTrashAlt  } from 'react-icons/fa'
+
+// types
 import { TaskType } from '../types'
+
 
 type Props = {
   task: TaskType
@@ -18,8 +22,8 @@ const Task = (props: Props) => {
         <p>{task.description}</p>
     </div>
     <div className="buttons">
-      <button onClick={ () => props.update(task) }> Upraviť</button>
-      <button onClick={ () => props.deleteTask(task.id) }>Vymazať</button>
+      <button onClick={ () => props.update(task) } title="Editovať úlohu"><FaEdit /></button>
+      <button onClick={ () => props.deleteTask(task.id) } title="Vymazať úlohu"><FaTrashAlt/></button>
     </div>
   </div>
   )
