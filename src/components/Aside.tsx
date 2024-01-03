@@ -106,8 +106,10 @@ const Aside = () => {
         <NavLink className="project-link" to="/mojeRecipes">
           Recepty
         </NavLink>
+        <NavLink className="project-link" to="/mojeToDo">
+          ToDo apka
+        </NavLink>
       </CollapsibleMenu>
-        
     </div>
   );
 };

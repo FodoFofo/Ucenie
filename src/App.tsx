@@ -43,6 +43,7 @@ import AppSearch from "./components/Setek/AppSearch/AppSearch";
 import AppRecipes from "./components/Fodo/Recepty/AppRecipes";
 import AddRecipe from "./components/Fodo/Recepty/components/AddRecipe";
 import { RecipeProvider } from "./components/Fodo/Recepty/components/RecipeContext";
+import AppTodo from "./components/Fodo/Todo/AppTodo";
 
 const App = () => {
   const [recipes, setRecipes] = useState(inputData)
@@ -380,6 +381,18 @@ const App = () => {
                   lessons=""
                 >
                   <AddRecipe />
+                </Project>
+              }
+            />
+            <Route
+              path="/mojeToDo"
+              element={
+                <Project
+                  title="ToDo apka"
+                  link=""
+                  lessons=""
+                >
+                  <AppTodo />
                 </Project>
               }
             />

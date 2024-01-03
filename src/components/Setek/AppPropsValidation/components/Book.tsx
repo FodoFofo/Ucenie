@@ -2,9 +2,9 @@
 // import defaulImage from '../images/book-default.jpg'
 
 type Props = {
-    id?: number, 
-    image?: string, 
-    title?: string, 
+    id?: number,
+    image?: string,
+    title?: string,
     price?: number
 }
 
