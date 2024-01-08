@@ -1,10 +1,10 @@
 import { Route, Routes } from "react-router-dom";
 import { useState } from "react";
 
-// štýly
+// styles
 import "./App.scss";
 
-// dáta
+// data
 import inputData from "./components/Fodo/Recepty/recipes"
 
 // views
@@ -12,7 +12,7 @@ import Main from "./Views/Main";
 import Projects from "./Views/Projects";
 import Links from "./Views/Links";
 
-// komponenty
+// components
 import Navigation from "./components/Navigation";
 import AppBooks from "./components/Setek/AppBooks/AppBooks";
 import Buttons from "./components/Setek/AppHooks/Buttons";

@@ -436,8 +436,54 @@ const recipes = [
               tags: ["chlieb", "bezlepkové"],
               note: ""
             },
+            {
+                    id: 1700716277443,
+                    image: "",
+                    recipeName: "Chlieb Liana",
+                    ingredients: [
+                      {
+                        name: "Break Mix Dark",
+                        quantity:"250 g"
+                      },
+                      {
+                        name: "Break Mix White",
+                        quantity:"100 g"
+                      },
+                      {
+                        name: "Mix Per Pane Intergale",
+                        quantity:"50 g"
+                      },
+                      {
+                        name: "Voda",
+                        quantity:"300 ml"
+                      },
+                      {
+                        name: "Droždie čerstvé",
+                        quantity:"10 g"
+                      },
+                      {
+                        name: "Cukor",
+                        quantity:"1 KL"
+                      },
+                      {
+                        name: "Soľ",
+                        quantity:"1,5 KL"
+                      },
+                      {
+                        name: "Semiačka",
+                        quantity:"po 1 KL"
+                      },
+                      {
+                        name: "Olivový olej",
+                        quantity:"1 PL"
+                      },
+                    ],
+                    recipeProcedure: "Droždie a cukor rozpustíme v 100 ml vlažnej vode, a necháme cca 10-15 minút vzísť. Potom dolpníme všetky ostatné ingrediencie a vymiešame. Nechame 30 minút kysnuť v nádobe, potom vyklopíme na papier na pečenie. Vytvarujeme bochník a necháme ďalších 30 mínút kysnúť. Do rúry vložíme nádobu na záparu a zohrejeme na 220°C, bochník pokropíme vodou a vložíme do rúry, do nádoby na záparu vlejeme ca 2dl vody a pečieme 10 minút, potom nádobu na záparu vyberiem, chlieb pokropíme vodou, znížime teplotu na 200°C a pečieme 15 minút, potom chlieb pokropíme vodou, znížime teplotu na 180°C a pečieme 20 minút, potom ho vyberieme a nechame na mriežke vychladnúť",
+                    tags: ["bezlepkové", "chlieb"],
+                    note: "Chuťovo je prvý deň dobrý potom sa rozpadá"
+                  },
 ];
-  
+
 export default recipes;
 
 //////////////////
