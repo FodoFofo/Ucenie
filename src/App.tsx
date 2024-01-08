@@ -1,11 +1,12 @@
 import { Route, Routes } from "react-router-dom";
-import { useState } from "react";
+import { useState, lazy } from "react";
 
 // styles
 import "./App.scss";
 
 // data
 import inputData from "./components/Fodo/Recepty/recipes"
+import projectData from "./Data/projectData";
 
 // views
 import Main from "./Views/Main";
@@ -48,6 +49,14 @@ import AppTodo from "./components/Fodo/Todo/AppTodo";
 const App = () => {
   const [recipes, setRecipes] = useState(inputData)
 
+//    *****************
+//    ******TOTO******
+//    *****************
+  const DynamicComponent = ( {child}: { child: string } ) => {
+    const Component = lazy( () => import(child))
+    return <Component />
+  }
+
   return (
     <div className="App">
       <header>
@@ -59,18 +68,28 @@ const App = () => {
             <Route path="/" element={<Main />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/links" element={<Links />} />
-            <Route
-              path="/setekBooks"
-              element={
-                <Project
-                  title="Projekt Books"
-                  link="https://www.youtube.com/watch?v=RdDzoVJOxX4&list=PLQ8x_VWW6Akua8I5spV8nHIWlG6_tX6dx"
-                  lessons="8. - 17."
-                >
-                  <AppBooks />
-                </Project>
+
+            {/*****************
+              ******TOTO******
+              *****************/}
+
+            {projectData.map( (project) => {
+                return (
+                    <Route
+                    path={project.path}
+                    element={
+                        <Project
+                            title={project.projectTitle}
+                            link={project.projectLink}
+                            lessons={project.projectLessons}
+                            >
+                            <DynamicComponent child={project.component}/>
+                        </Project>
               }
             />
+                )
+            })}
+
             <Route
               path="/setekHooks"
               element={
