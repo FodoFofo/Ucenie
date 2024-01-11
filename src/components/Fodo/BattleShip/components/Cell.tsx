@@ -1,11 +1,5 @@
-//styles
-import './Cell.scss'
-
-const Cell = () => {
-    const nieco = 'boat'
-  return (
-    <div className={`cell ${nieco}`}></div>
-  )
+const Cell = ( {position}: {position: string}) => {
+  return <div id={position} className="cell"></div>
 }
 
 export default Cell

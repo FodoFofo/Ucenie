@@ -1,3 +1,4 @@
+
 export interface MovieType {
     id: number,
     name?: string,
@@ -16,3 +17,19 @@ export interface IssType {
         longitude: string
     }
 }
+
+//--------------------------
+// BATTLE SHIP
+
+export interface CellType {
+row: number,
+column: number
+state: string // 'empty', 'ship'
+}
+
+export interface ShipType {
+    name: string,
+    size: number
+}
+
+//--------------------------
