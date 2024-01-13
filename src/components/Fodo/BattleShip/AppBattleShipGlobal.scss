@@ -1,3 +1,5 @@
+@import './utility/variables.scss';
+
 .app-battle-ship {
     h3, h5 {
         margin: 0;
@@ -8,15 +10,15 @@
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-        margin-bottom: 2em;
+        margin: 2em 0;
 
         .rows {
             margin-left: 2em;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            border: 5px solid #a35f5f;
-            box-shadow: 0px 0px 30px 4px #141d09;
+            border: 5px solid $color-playground-border;
+            box-shadow: 0px 0px 30px 4px $color-shadow;
 
              .row {
                 display: flex;
@@ -25,11 +27,11 @@
                 .cell {
                     width: 30px;
                     height: 30px;
-                    background-color: rgba(233, 238, 237, 0.8);
-                    border: 1px solid #a35f5f;
+                    background-color: $color-cell-background;
+                    border: 1px solid $color-cell-border;
 
                     &:hover {
-                        background-color: rgba(86, 189, 168, 0.8);
+                        background-color: $color-cell-hover;
                     }
                 }
              }
@@ -38,7 +40,8 @@
         .side {
             width: 15vw;
             margin: 0 2em ;
-            box-shadow: 0px 0px 30px 4px #141d09;
+            box-shadow: 0px 0px 30px 4px $color-shadow;
+            border: 1px solid $color-side-border;
 
             .h3 {
                 margin-bottom: 3em;
@@ -56,8 +59,8 @@
                     .ship-part {
                         width: 10px;
                         height: 10px;
-                        background-color: rgba(21, 87, 74, 0.8);
-                        border: 1px solid #e2c0c0;
+                        background-color: $color-ship;
+                        border: 1px solid $color-cell-border;
                         margin-bottom: 1em;
                     }
                 }
