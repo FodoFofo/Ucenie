@@ -1,4 +1,4 @@
-@import './utility/variables.scss';
+@import './utilities/variables.scss';
 
 .app-battle-ship {
     h3, h5 {
@@ -30,9 +30,17 @@
                     background-color: $color-cell-background;
                     border: 1px solid $color-cell-border;
 
+                    &::before {
+                        content: '';
+                    }
+
                     &:hover {
                         background-color: $color-cell-hover;
                     }
+                }
+
+                .show {
+                    background-color: $color-ship;
                 }
              }
         }
