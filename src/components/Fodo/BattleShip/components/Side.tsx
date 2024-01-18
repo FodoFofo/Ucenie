@@ -1,5 +1,5 @@
 // data
-import { Ships } from "../utility/Database"
+import { Ships } from "../utilities/Database"
 
 //components
 import Ship from "./Ship"

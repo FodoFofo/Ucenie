@@ -5,7 +5,7 @@ import Cell from "./Cell"
 import { CellType } from "../../../../Types"
 
 // utility
-import { getKey } from "../utility/utility"
+import { getKey } from "../utilities/utility"
 
 const Row = ({row}: {row: CellType[]}) => {
     return <div className="row">
